@@ -12,9 +12,12 @@
 		CB9637362176602400FE926E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637342176602400FE926E /* Main.storyboard */; };
 		CB9637382176602600FE926E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9637372176602600FE926E /* Assets.xcassets */; };
 		CB96373B2176602600FE926E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637392176602600FE926E /* LaunchScreen.storyboard */; };
+		DBD71C45F5545482A5781667 /* Pods_SurfAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfAdvisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0310893B1EC2EE848020731 /* Pods-SurfAdvisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.release.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.release.xcconfig"; sourceTree = "<group>"; };
 		CB96372D2176602400FE926E /* SurfAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9637302176602400FE926E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9637322176602400FE926E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		CB9637372176602600FE926E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB96373A2176602600FE926E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB96373C2176602600FE926E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.debug.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBD71C45F5545482A5781667 /* Pods_SurfAdvisor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16CCB967455F35C97B8669F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B57AB035A154B16C0738628F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */,
+				B0310893B1EC2EE848020731 /* Pods-SurfAdvisor.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CB9637242176602400FE926E = {
 			isa = PBXGroup;
 			children = (
 				CB96372F2176602400FE926E /* SurfAdvisor */,
 				CB96372E2176602400FE926E /* Products */,
+				B57AB035A154B16C0738628F /* Pods */,
+				16CCB967455F35C97B8669F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB96373F2176602600FE926E /* Build configuration list for PBXNativeTarget "SurfAdvisor" */;
 			buildPhases = (
+				05B27CD13E0364250E441993 /* [CP] Check Pods Manifest.lock */,
 				CB9637292176602400FE926E /* Sources */,
 				CB96372A2176602400FE926E /* Frameworks */,
 				CB96372B2176602400FE926E /* Resources */,
+				C94E882D76DA981335400FA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05B27CD13E0364250E441993 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SurfAdvisor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C94E882D76DA981335400FA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB9637292176602400FE926E /* Sources */ = {
@@ -278,6 +360,7 @@
 		};
 		CB9637402176602600FE926E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +379,7 @@
 		};
 		CB9637412176602600FE926E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0310893B1EC2EE848020731 /* Pods-SurfAdvisor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
