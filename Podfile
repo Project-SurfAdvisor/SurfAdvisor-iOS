@@ -6,10 +6,7 @@ target 'SurfAdvisor' do
   use_frameworks!
 
   # Pods for SurfAdvisor
- 	pod 'Alamofire'
-	pod 'Kingfisher'
-	pod 'Hero'
+ 	    pod 'Alamofire'
 	pod 'SwiftyJSON'
-	pod 'SwiftyGif'
-
+    pod 'SwiftGifOrigin'
 end

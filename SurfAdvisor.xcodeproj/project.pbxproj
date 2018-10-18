@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		CB9637382176602600FE926E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9637372176602600FE926E /* Assets.xcassets */; };
 		CB96373B2176602600FE926E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637392176602600FE926E /* LaunchScreen.storyboard */; };
 		CBA9367D2178F5F300060C15 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367C2178F5F300060C15 /* SearchVC.swift */; };
+		CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367E2178F95900060C15 /* SearchResultCell.swift */; };
 		DBD71C45F5545482A5781667 /* Pods_SurfAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		CB96373A2176602600FE926E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB96373C2176602600FE926E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA9367C2178F5F300060C15 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		CBA9367E2178F95900060C15 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.debug.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 		CBA9367B2178F5AB00060C15 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CBA9367E2178F95900060C15 /* SearchResultCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,11 +149,12 @@
 				TargetAttributes = {
 					CB96372C2176602400FE926E = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = CB9637282176602400FE926E /* Build configuration list for PBXProject "SurfAdvisor" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -207,17 +211,13 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBA9367D2178F5F300060C15 /* SearchVC.swift in Sources */,
+				CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */,
 				CB9637312176602400FE926E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,8 +368,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -381,10 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N6JH7RBUA4;
 				INFOPLIST_FILE = SurfAdvisor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pkse1213.SurfAdvisor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -400,10 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N6JH7RBUA4;
 				INFOPLIST_FILE = SurfAdvisor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pkse1213.SurfAdvisor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

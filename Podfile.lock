@@ -1,32 +1,24 @@
 PODS:
   - Alamofire (4.7.3)
-  - Hero (1.4.0)
-  - Kingfisher (4.10.0)
-  - SwiftyGif (4.2.0)
+  - SwiftGifOrigin (1.6.1)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
-  - Hero
-  - Kingfisher
-  - SwiftyGif
+  - SwiftGifOrigin
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - Hero
-    - Kingfisher
-    - SwiftyGif
+    - SwiftGifOrigin
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Hero: bac92350d7201a1a940003e0767c7b52ce7c99a1
-  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
-  SwiftyGif: a149bf84df23370592f3f075561ae02c8632a314
+  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: bb4587739d40cf8dd38aee73d475a67a0e1afb54
+PODFILE CHECKSUM: f9fccd0be4de4c3bea31cede7547b560ac6ee155
 
 COCOAPODS: 1.6.0.beta.1
