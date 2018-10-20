@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchVC: UIViewController {
+class SearchResultVC: UIViewController {
 
     @IBOutlet weak var resultTbV: UITableView!
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class SearchVC: UIViewController {
     }
 }
 
-extension SearchVC: UITableViewDelegate, UITableViewDataSource {
+extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 15
     }

@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB54CA58217B9A6200688F47 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CA57217B9A6200688F47 /* MainVC.swift */; };
+		CB54CA5A217BA01D00688F47 /* DateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CA59217BA01D00688F47 /* DateVC.swift */; };
+		CB54CA5C217BA02800688F47 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CA5B217BA02800688F47 /* LocationVC.swift */; };
 		CB9637312176602400FE926E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9637302176602400FE926E /* AppDelegate.swift */; };
 		CB9637362176602400FE926E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637342176602400FE926E /* Main.storyboard */; };
 		CB9637382176602600FE926E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9637372176602600FE926E /* Assets.xcassets */; };
 		CB96373B2176602600FE926E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637392176602600FE926E /* LaunchScreen.storyboard */; };
-		CBA9367D2178F5F300060C15 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367C2178F5F300060C15 /* SearchVC.swift */; };
+		CBA9367D2178F5F300060C15 /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367C2178F5F300060C15 /* SearchResultVC.swift */; };
 		CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367E2178F95900060C15 /* SearchResultCell.swift */; };
 		DBD71C45F5545482A5781667 /* Pods_SurfAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */; };
 /* End PBXBuildFile section */
@@ -19,13 +22,16 @@
 /* Begin PBXFileReference section */
 		8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfAdvisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0310893B1EC2EE848020731 /* Pods-SurfAdvisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.release.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.release.xcconfig"; sourceTree = "<group>"; };
+		CB54CA57217B9A6200688F47 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		CB54CA59217BA01D00688F47 /* DateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateVC.swift; sourceTree = "<group>"; };
+		CB54CA5B217BA02800688F47 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		CB96372D2176602400FE926E /* SurfAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9637302176602400FE926E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB9637352176602400FE926E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB9637372176602600FE926E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB96373A2176602600FE926E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB96373C2176602600FE926E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBA9367C2178F5F300060C15 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		CBA9367C2178F5F300060C15 /* SearchResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
 		CBA9367E2178F95900060C15 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.debug.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +108,10 @@
 		CBA9367A2178F5A800060C15 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CBA9367C2178F5F300060C15 /* SearchVC.swift */,
+				CBA9367C2178F5F300060C15 /* SearchResultVC.swift */,
+				CB54CA57217B9A6200688F47 /* MainVC.swift */,
+				CB54CA59217BA01D00688F47 /* DateVC.swift */,
+				CB54CA5B217BA02800688F47 /* LocationVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -234,9 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBA9367D2178F5F300060C15 /* SearchVC.swift in Sources */,
+				CB54CA58217B9A6200688F47 /* MainVC.swift in Sources */,
+				CBA9367D2178F5F300060C15 /* SearchResultVC.swift in Sources */,
+				CB54CA5A217BA01D00688F47 /* DateVC.swift in Sources */,
 				CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */,
 				CB9637312176602400FE926E /* AppDelegate.swift in Sources */,
+				CB54CA5C217BA02800688F47 /* LocationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
