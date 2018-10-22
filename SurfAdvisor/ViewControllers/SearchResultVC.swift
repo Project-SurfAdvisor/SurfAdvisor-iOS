@@ -13,7 +13,7 @@ class SearchResultVC: UIViewController {
     @IBOutlet weak var resultTbV: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        setupView()
     }
     
     func setupView() {
@@ -31,6 +31,10 @@ extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
         let cell = resultTbV.dequeueReusableCell(withIdentifier: "SearchResultCell") as! SearchResultCell
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

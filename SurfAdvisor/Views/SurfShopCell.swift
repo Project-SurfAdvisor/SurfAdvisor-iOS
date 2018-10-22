@@ -8,6 +8,6 @@
 
 import UIKit
 
-class InfoCell: UICollectionViewCell {
+class SurfShopCell: UICollectionViewCell {
     
 }

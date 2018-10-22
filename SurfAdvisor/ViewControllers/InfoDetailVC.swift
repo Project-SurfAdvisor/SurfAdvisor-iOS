@@ -28,7 +28,8 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = infoTbV.dequeueReusableCell(withIdentifier: "InfoDetailCell") as! InfoDetailCell
+        return cell
     }
     
     
