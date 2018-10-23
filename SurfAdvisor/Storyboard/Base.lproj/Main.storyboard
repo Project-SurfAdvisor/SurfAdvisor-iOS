@@ -372,6 +372,7 @@
         <!--LocationVC-->
         <scene sceneID="l8z-93-Jby">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-Dz-wFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="LocationVC" id="E2Q-PJ-2jA" customClass="LocationVC" customModule="SurfAdvisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="57I-DE-2mm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -416,15 +417,6 @@
                                     <action selector="cancelAction:" destination="E2Q-PJ-2jA" eventType="touchUpInside" id="UYj-KS-kEj"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="MGt-kk-TPX">
-                                <rect key="frame" x="0.0" y="20" width="328" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.56145654965753422" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="E2Q-PJ-2jA" id="tOP-qv-HB9"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -435,28 +427,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MQz-6d-P5R"/>
                     </view>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="IFk-a9-ptk" id="5mo-O6-gN7"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-Dz-wFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="SOB-dW-dxf">
-                    <connections>
-                        <outlet property="delegate" destination="E2Q-PJ-2jA" id="aow-r8-DIC"/>
-                        <outlet property="searchContentsController" destination="E2Q-PJ-2jA" id="ptC-DX-9IO"/>
-                        <outlet property="searchResultsDataSource" destination="E2Q-PJ-2jA" id="qtx-Rd-reB"/>
-                        <outlet property="searchResultsDelegate" destination="E2Q-PJ-2jA" id="q92-YI-5BI"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="IFk-a9-ptk">
-                    <connections>
-                        <outlet property="delegate" destination="E2Q-PJ-2jA" id="leg-Ot-NPR"/>
-                        <outlet property="searchBar" destination="MGt-kk-TPX" id="fgg-SB-k0z"/>
-                        <outlet property="searchContentsController" destination="E2Q-PJ-2jA" id="s9L-6O-6WG"/>
-                        <outlet property="searchResultsDataSource" destination="E2Q-PJ-2jA" id="n7X-cr-5fU"/>
-                        <outlet property="searchResultsDelegate" destination="E2Q-PJ-2jA" id="PMa-CT-oPT"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3224.8000000000002" y="-664.31784107946032"/>
         </scene>
@@ -685,7 +656,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXF-fr-vn8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3868" y="-664.31784107946032"/>
+            <point key="canvasLocation" x="3857" y="-664"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7d1-Xj-Sdj">
@@ -703,7 +674,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNH-2z-d32" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="-664"/>
+            <point key="canvasLocation" x="1964" y="-664"/>
         </scene>
     </scenes>
     <resources>

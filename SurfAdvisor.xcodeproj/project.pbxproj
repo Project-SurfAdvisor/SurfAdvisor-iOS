@@ -21,6 +21,15 @@
 		CB96373B2176602600FE926E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637392176602600FE926E /* LaunchScreen.storyboard */; };
 		CBA9367D2178F5F300060C15 /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367C2178F5F300060C15 /* SearchResultVC.swift */; };
 		CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367E2178F95900060C15 /* SearchResultCell.swift */; };
+		CBC533E1217F3AEB0084E145 /* CityListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E0217F3AEB0084E145 /* CityListData.swift */; };
+		CBC533E4217F3B6C0084E145 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E3217F3B6C0084E145 /* HTTPStatusCode.swift */; };
+		CBC533E6217F3B9C0084E145 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E5217F3B9C0084E145 /* NetworkResult.swift */; };
+		CBC533E8217F3BA90084E145 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E7217F3BA90084E145 /* RequestService.swift */; };
+		CBC533EA217F3BCA0084E145 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E9217F3BCA0084E145 /* APIService.swift */; };
+		CBC533EC217F3E810084E145 /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533EB217F3E810084E145 /* SearchResultData.swift */; };
+		CBC533EE217F40C90084E145 /* AreaDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533ED217F40C90084E145 /* AreaDetailData.swift */; };
+		CBC533F0217F431A0084E145 /* AreaInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533EF217F431A0084E145 /* AreaInfoData.swift */; };
+		CBC533F6217F468B0084E145 /* GradeSearchResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533F5217F468B0084E145 /* GradeSearchResultService.swift */; };
 		DBD71C45F5545482A5781667 /* Pods_SurfAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +52,15 @@
 		CB96373C2176602600FE926E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA9367C2178F5F300060C15 /* SearchResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
 		CBA9367E2178F95900060C15 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		CBC533E0217F3AEB0084E145 /* CityListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListData.swift; sourceTree = "<group>"; };
+		CBC533E3217F3B6C0084E145 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		CBC533E5217F3B9C0084E145 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		CBC533E7217F3BA90084E145 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		CBC533E9217F3BCA0084E145 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CBC533EB217F3E810084E145 /* SearchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchResultData.swift; path = SurfAdvisor/Model/SearchResultData.swift; sourceTree = SOURCE_ROOT; };
+		CBC533ED217F40C90084E145 /* AreaDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDetailData.swift; sourceTree = "<group>"; };
+		CBC533EF217F431A0084E145 /* AreaInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoData.swift; sourceTree = "<group>"; };
+		CBC533F5217F468B0084E145 /* GradeSearchResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeSearchResultService.swift; sourceTree = "<group>"; };
 		F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.debug.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +114,8 @@
 		CB96372F2176602400FE926E /* SurfAdvisor */ = {
 			isa = PBXGroup;
 			children = (
+				CBC533E2217F3B350084E145 /* Services */,
+				CBC533DF217F3AD50084E145 /* Model */,
 				CBA9367B2178F5AB00060C15 /* Views */,
 				CBA9367A2178F5A800060C15 /* ViewControllers */,
 				CBA936792178F5A600060C15 /* Storyboard */,
@@ -137,6 +157,29 @@
 				CB731B19217E292D0080FA57 /* ForcastCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CBC533DF217F3AD50084E145 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CBC533EB217F3E810084E145 /* SearchResultData.swift */,
+				CBC533E0217F3AEB0084E145 /* CityListData.swift */,
+				CBC533ED217F40C90084E145 /* AreaDetailData.swift */,
+				CBC533EF217F431A0084E145 /* AreaInfoData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CBC533E2217F3B350084E145 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CBC533E3217F3B6C0084E145 /* HTTPStatusCode.swift */,
+				CBC533E5217F3B9C0084E145 /* NetworkResult.swift */,
+				CBC533E7217F3BA90084E145 /* RequestService.swift */,
+				CBC533E9217F3BCA0084E145 /* APIService.swift */,
+				CBC533F5217F468B0084E145 /* GradeSearchResultService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,13 +305,22 @@
 				CBA9367D2178F5F300060C15 /* SearchResultVC.swift in Sources */,
 				CB54CA5A217BA01D00688F47 /* DateVC.swift in Sources */,
 				CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */,
+				CBC533EC217F3E810084E145 /* SearchResultData.swift in Sources */,
 				CB731B1A217E292D0080FA57 /* ForcastCell.swift in Sources */,
+				CBC533F6217F468B0084E145 /* GradeSearchResultService.swift in Sources */,
+				CBC533F0217F431A0084E145 /* AreaInfoData.swift in Sources */,
 				CB54CA5E217C381C00688F47 /* DetailVC.swift in Sources */,
+				CBC533EA217F3BCA0084E145 /* APIService.swift in Sources */,
+				CBC533E4217F3B6C0084E145 /* HTTPStatusCode.swift in Sources */,
+				CBC533EE217F40C90084E145 /* AreaDetailData.swift in Sources */,
 				CB731B14217E186C0080FA57 /* InfoDetailVC.swift in Sources */,
 				CB9637312176602400FE926E /* AppDelegate.swift in Sources */,
+				CBC533E1217F3AEB0084E145 /* CityListData.swift in Sources */,
 				CB54CA5C217BA02800688F47 /* LocationVC.swift in Sources */,
 				CB731B16217E1A450080FA57 /* InfoDetailCell.swift in Sources */,
 				CB731B18217E1A540080FA57 /* SurfShopCell.swift in Sources */,
+				CBC533E8217F3BA90084E145 /* RequestService.swift in Sources */,
+				CBC533E6217F3B9C0084E145 /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
