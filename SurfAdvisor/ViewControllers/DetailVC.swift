@@ -9,6 +9,7 @@
 import UIKit
 
 class DetailVC: UIViewController {
+    @IBOutlet weak var areaNameLabel: UILabel!
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var forcastView: UIView!
     @IBOutlet weak var surfShopCV: UICollectionView!

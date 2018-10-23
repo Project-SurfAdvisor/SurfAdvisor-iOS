@@ -359,6 +359,7 @@
                         <viewLayoutGuide key="safeArea" id="W5n-oC-13P"/>
                     </view>
                     <connections>
+                        <outlet property="areaNameLabel" destination="IAq-uB-ake" id="PIP-e1-OKX"/>
                         <outlet property="forcastTbV" destination="0Jo-ek-gSK" id="Xkh-bv-mtp"/>
                         <outlet property="forcastView" destination="q8a-WW-U96" id="rWC-zH-VYM"/>
                         <outlet property="infoView" destination="0TP-Ci-g6f" id="aP9-NP-wJx"/>
@@ -372,7 +373,6 @@
         <!--LocationVC-->
         <scene sceneID="l8z-93-Jby">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-Dz-wFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="LocationVC" id="E2Q-PJ-2jA" customClass="LocationVC" customModule="SurfAdvisor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="57I-DE-2mm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -410,7 +410,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS4-dJ-sSL">
-                                <rect key="frame" x="329" y="38" width="46" height="30"/>
+                                <rect key="frame" x="313" y="38" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -428,6 +428,7 @@
                         <viewLayoutGuide key="safeArea" id="MQz-6d-P5R"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-Dz-wFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3224.8000000000002" y="-664.31784107946032"/>
         </scene>
@@ -607,6 +608,9 @@
                                                     <segment title="거리순"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="selectOptionAction:" destination="rO0-x7-mm8" eventType="valueChanged" id="i7Z-Ku-JeM"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </view>
@@ -635,6 +639,9 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="SearchResultCell"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="nameLabel" destination="E8l-qZ-GMU" id="Mf4-sC-F8I"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>

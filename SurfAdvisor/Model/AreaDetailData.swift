@@ -10,11 +10,11 @@ import Foundation
 
 struct AreaDetailData: Codable {
     let status: String
-    let data: DataClass
+    let data: Area
     let message: String
 }
 
-struct DataClass: Codable {
+struct Area: Codable {
     let saName: String
     let siGrade, siWeatherImage, siTemperature, siWave: Int
     let siWind: Int

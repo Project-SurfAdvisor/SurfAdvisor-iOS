@@ -29,7 +29,9 @@
 		CBC533EC217F3E810084E145 /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533EB217F3E810084E145 /* SearchResultData.swift */; };
 		CBC533EE217F40C90084E145 /* AreaDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533ED217F40C90084E145 /* AreaDetailData.swift */; };
 		CBC533F0217F431A0084E145 /* AreaInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533EF217F431A0084E145 /* AreaInfoData.swift */; };
-		CBC533F6217F468B0084E145 /* GradeSearchResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533F5217F468B0084E145 /* GradeSearchResultService.swift */; };
+		CBC533F6217F468B0084E145 /* SearchResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533F5217F468B0084E145 /* SearchResultService.swift */; };
+		CBC533F8217F68A10084E145 /* AreaDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533F7217F68A10084E145 /* AreaDetailService.swift */; };
+		CBC533FA217F69CB0084E145 /* AreaInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533F9217F69CB0084E145 /* AreaInfoService.swift */; };
 		DBD71C45F5545482A5781667 /* Pods_SurfAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +62,9 @@
 		CBC533EB217F3E810084E145 /* SearchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchResultData.swift; path = SurfAdvisor/Model/SearchResultData.swift; sourceTree = SOURCE_ROOT; };
 		CBC533ED217F40C90084E145 /* AreaDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDetailData.swift; sourceTree = "<group>"; };
 		CBC533EF217F431A0084E145 /* AreaInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoData.swift; sourceTree = "<group>"; };
-		CBC533F5217F468B0084E145 /* GradeSearchResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeSearchResultService.swift; sourceTree = "<group>"; };
+		CBC533F5217F468B0084E145 /* SearchResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultService.swift; sourceTree = "<group>"; };
+		CBC533F7217F68A10084E145 /* AreaDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDetailService.swift; sourceTree = "<group>"; };
+		CBC533F9217F69CB0084E145 /* AreaInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoService.swift; sourceTree = "<group>"; };
 		F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.debug.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,8 +118,8 @@
 		CB96372F2176602400FE926E /* SurfAdvisor */ = {
 			isa = PBXGroup;
 			children = (
-				CBC533E2217F3B350084E145 /* Services */,
 				CBC533DF217F3AD50084E145 /* Model */,
+				CBC533E2217F3B350084E145 /* Services */,
 				CBA9367B2178F5AB00060C15 /* Views */,
 				CBA9367A2178F5A800060C15 /* ViewControllers */,
 				CBA936792178F5A600060C15 /* Storyboard */,
@@ -177,7 +181,9 @@
 				CBC533E5217F3B9C0084E145 /* NetworkResult.swift */,
 				CBC533E7217F3BA90084E145 /* RequestService.swift */,
 				CBC533E9217F3BCA0084E145 /* APIService.swift */,
-				CBC533F5217F468B0084E145 /* GradeSearchResultService.swift */,
+				CBC533F5217F468B0084E145 /* SearchResultService.swift */,
+				CBC533F7217F68A10084E145 /* AreaDetailService.swift */,
+				CBC533F9217F69CB0084E145 /* AreaInfoService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -307,7 +313,8 @@
 				CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */,
 				CBC533EC217F3E810084E145 /* SearchResultData.swift in Sources */,
 				CB731B1A217E292D0080FA57 /* ForcastCell.swift in Sources */,
-				CBC533F6217F468B0084E145 /* GradeSearchResultService.swift in Sources */,
+				CBC533FA217F69CB0084E145 /* AreaInfoService.swift in Sources */,
+				CBC533F6217F468B0084E145 /* SearchResultService.swift in Sources */,
 				CBC533F0217F431A0084E145 /* AreaInfoData.swift in Sources */,
 				CB54CA5E217C381C00688F47 /* DetailVC.swift in Sources */,
 				CBC533EA217F3BCA0084E145 /* APIService.swift in Sources */,
@@ -315,6 +322,7 @@
 				CBC533EE217F40C90084E145 /* AreaDetailData.swift in Sources */,
 				CB731B14217E186C0080FA57 /* InfoDetailVC.swift in Sources */,
 				CB9637312176602400FE926E /* AppDelegate.swift in Sources */,
+				CBC533F8217F68A10084E145 /* AreaDetailService.swift in Sources */,
 				CBC533E1217F3AEB0084E145 /* CityListData.swift in Sources */,
 				CB54CA5C217BA02800688F47 /* LocationVC.swift in Sources */,
 				CB731B16217E1A450080FA57 /* InfoDetailCell.swift in Sources */,

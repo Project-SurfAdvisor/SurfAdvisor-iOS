@@ -12,6 +12,10 @@ class MainVC: UIViewController {
     @IBOutlet weak var dateTxf: UITextField!
     @IBOutlet weak var locationTxf: UITextField!
     
+    var date = ""
+    var longitude = 0.0
+    var latitude = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +25,8 @@ class MainVC: UIViewController {
    
     }
     
+    
+    
     @IBAction func locationAction(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocationVC") as! LocationVC
         self.present(vc, animated: true) {
@@ -29,8 +35,21 @@ class MainVC: UIViewController {
     }
     
     @IBAction func searchAction(_ sender: UIButton) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchResultVC") as! SearchResultVC
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        SearchResultService.shareInstance.getGradeSearchResult(date: self.date, longitude: self.longitude, latitude: self.latitude, completion: { (places) in
+            
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchResultVC") as! SearchResultVC
+            vc.places = places
+            vc.date = self.date
+            vc.longitude = self.longitude
+            vc.latitude = self.latitude
+            self.navigationController?.pushViewController(vc, animated: true)
+        }) { (err) in
+            print("검색 결과 실패")
+        }
+        
+        
+        
         
     }
     
