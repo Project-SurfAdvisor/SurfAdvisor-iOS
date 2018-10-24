@@ -11,21 +11,40 @@ import UIKit
 class MainVC: UIViewController {
     @IBOutlet weak var dateTxf: UITextField!
     @IBOutlet weak var locationTxf: UITextField!
-    
+    var datePicker = UIDatePicker()
     var date = ""
     var longitude = 0.0
     var latitude = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupPickerView()
+        
+        let gest = UIGestureRecognizer(target: self, action: #selector(touchView(gest:)))
+        view.addGestureRecognizer(gest)
+    }
+    
+    @objc func touchView(gest: UIGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    func setupPickerView() {
+        datePicker.datePickerMode = .date
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(chooseDate))
+        toolbar.setItems([doneButton], animated: true)
+        dateTxf.inputAccessoryView = toolbar
+        dateTxf.inputView = datePicker
         
     }
-    
-    @IBAction func dateAction(_ sender: UIButton) {
-   
+
+    @objc func chooseDate() {
+        let dateFommatter = DateFormatter()
+        dateFommatter.dateFormat = "yyyy.MM.dd"
+        dateTxf.text = dateFommatter.string(from: datePicker.date)
+        view.endEditing(true)
     }
-    
-    
     
     @IBAction func locationAction(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocationVC") as! LocationVC

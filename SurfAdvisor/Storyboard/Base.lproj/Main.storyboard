@@ -52,7 +52,7 @@
                                 <rect key="frame" x="34" y="198" width="307" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2018 . 10 . 15" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wcw-60-jrD">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2018.10.15" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wcw-60-jrD">
                                         <rect key="frame" x="0.0" y="0.0" width="307" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -63,14 +63,6 @@
                                         <rect key="frame" x="286" y="8" width="13" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMJ-5T-ihL">
-                                        <rect key="frame" x="0.0" y="0.0" width="307" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="dateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3PO-FE-CeA"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.63500642123287676" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -574,6 +566,7 @@
                         <viewLayoutGuide key="safeArea" id="u7Z-s5-HPb"/>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="I9d-FN-PRK" id="dwp-kB-bNz"/>
                         <outlet property="infoTbV" destination="VHZ-pq-Rqh" id="f2P-Yw-mK4"/>
                     </connections>
                 </viewController>
