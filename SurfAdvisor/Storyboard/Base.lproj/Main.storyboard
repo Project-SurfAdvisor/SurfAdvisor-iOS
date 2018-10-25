@@ -448,7 +448,7 @@
                                 <rect key="frame" x="0.0" y="57" width="375" height="610"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="InfoDetailCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoDetailCell" rowHeight="370" id="zL1-cH-0Uf" customClass="InfoDetailCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="InfoDetailCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="InfoDetailCell" rowHeight="370" id="zL1-cH-0Uf" customClass="InfoDetailCell" customModule="SurfAdvisor" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="370"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zL1-cH-0Uf" id="fsv-K6-LlA">
@@ -517,6 +517,9 @@
                                                             <state key="normal" title="전화">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="callAction:" destination="zL1-cH-0Uf" eventType="touchUpInside" id="J2A-oh-GHE"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="0.35902718321917809" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -534,6 +537,10 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="infoImageView" destination="OS9-6P-oOm" id="hLQ-rc-QRy"/>
+                                            <outlet property="nameLabel" destination="uEk-YE-qhw" id="vWe-Ka-TJW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
