@@ -21,6 +21,8 @@
 		CB96373B2176602600FE926E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637392176602600FE926E /* LaunchScreen.storyboard */; };
 		CBA9367D2178F5F300060C15 /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367C2178F5F300060C15 /* SearchResultVC.swift */; };
 		CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367E2178F95900060C15 /* SearchResultCell.swift */; };
+		CBB302712190A6F600F68A8A /* CityListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB302702190A6F600F68A8A /* CityListService.swift */; };
+		CBB302732190A9E300F68A8A /* CityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB302722190A9E300F68A8A /* CityListCell.swift */; };
 		CBC533E1217F3AEB0084E145 /* CityListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E0217F3AEB0084E145 /* CityListData.swift */; };
 		CBC533E4217F3B6C0084E145 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E3217F3B6C0084E145 /* HTTPStatusCode.swift */; };
 		CBC533E6217F3B9C0084E145 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E5217F3B9C0084E145 /* NetworkResult.swift */; };
@@ -54,6 +56,8 @@
 		CB96373C2176602600FE926E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBA9367C2178F5F300060C15 /* SearchResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
 		CBA9367E2178F95900060C15 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		CBB302702190A6F600F68A8A /* CityListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListService.swift; sourceTree = "<group>"; };
+		CBB302722190A9E300F68A8A /* CityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListCell.swift; sourceTree = "<group>"; };
 		CBC533E0217F3AEB0084E145 /* CityListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListData.swift; sourceTree = "<group>"; };
 		CBC533E3217F3B6C0084E145 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		CBC533E5217F3B9C0084E145 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CBA9367E2178F95900060C15 /* SearchResultCell.swift */,
+				CBB302722190A9E300F68A8A /* CityListCell.swift */,
 				CB731B15217E1A450080FA57 /* InfoDetailCell.swift */,
 				CB731B17217E1A540080FA57 /* SurfShopCell.swift */,
 				CB731B19217E292D0080FA57 /* ForcastCell.swift */,
@@ -181,6 +186,7 @@
 				CBC533E5217F3B9C0084E145 /* NetworkResult.swift */,
 				CBC533E7217F3BA90084E145 /* RequestService.swift */,
 				CBC533E9217F3BCA0084E145 /* APIService.swift */,
+				CBB302702190A6F600F68A8A /* CityListService.swift */,
 				CBC533F5217F468B0084E145 /* SearchResultService.swift */,
 				CBC533F7217F68A10084E145 /* AreaDetailService.swift */,
 				CBC533F9217F69CB0084E145 /* AreaInfoService.swift */,
@@ -309,6 +315,7 @@
 			files = (
 				CB54CA58217B9A6200688F47 /* MainVC.swift in Sources */,
 				CBA9367D2178F5F300060C15 /* SearchResultVC.swift in Sources */,
+				CBB302732190A9E300F68A8A /* CityListCell.swift in Sources */,
 				CB54CA5A217BA01D00688F47 /* DateVC.swift in Sources */,
 				CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */,
 				CBC533EC217F3E810084E145 /* SearchResultData.swift in Sources */,
@@ -317,6 +324,7 @@
 				CBC533F6217F468B0084E145 /* SearchResultService.swift in Sources */,
 				CBC533F0217F431A0084E145 /* AreaInfoData.swift in Sources */,
 				CB54CA5E217C381C00688F47 /* DetailVC.swift in Sources */,
+				CBB302712190A6F600F68A8A /* CityListService.swift in Sources */,
 				CBC533EA217F3BCA0084E145 /* APIService.swift in Sources */,
 				CBC533E4217F3B6C0084E145 /* HTTPStatusCode.swift in Sources */,
 				CBC533EE217F40C90084E145 /* AreaDetailData.swift in Sources */,

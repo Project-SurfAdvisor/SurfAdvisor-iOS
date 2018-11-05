@@ -48,9 +48,7 @@ class MainVC: UIViewController {
     
     @IBAction func locationAction(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocationVC") as! LocationVC
-        self.present(vc, animated: true) {
-            
-        }
+        self.present(vc, animated: true)
     }
     
     @IBAction func searchAction(_ sender: UIButton) {
