@@ -20,13 +20,13 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         setupPickerView()
         
-        let gest = UIGestureRecognizer(target: self, action: #selector(touchView(gest:)))
-        view.addGestureRecognizer(gest)
+//        let gest = UIGestureRecognizer(target: self, action: #selector(touchView(gest:)))
+//        self.view.addGestureRecognizer(gest)
     }
     
-    @objc func touchView(gest: UIGestureRecognizer) {
-        view.endEditing(true)
-    }
+//    @objc func touchView(gest: UIGestureRecognizer) {
+//        self.view.endEditing(true)
+//    }
     
     func setupPickerView() {
         datePicker.datePickerMode = .date
@@ -48,7 +48,8 @@ class MainVC: UIViewController {
     
     @IBAction func locationAction(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocationVC") as! LocationVC
-        self.present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
+//        self.present(vc, animated: true)
     }
     
     @IBAction func searchAction(_ sender: UIButton) {
@@ -64,10 +65,6 @@ class MainVC: UIViewController {
         }) { (err) in
             print("검색 결과 실패")
         }
-        
-        
-        
-        
     }
     
     

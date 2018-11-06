@@ -80,17 +80,16 @@
                                         <rect key="frame" x="286" y="8" width="13" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0b-5T-qSB">
+                                        <rect key="frame" x="0.0" y="-1" width="307" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="locationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQ7-rr-gFH"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.63500642119999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0b-5T-qSB">
-                                <rect key="frame" x="175" y="418" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="locationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQ7-rr-gFH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="z3t-OC-hqo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0Zk-Va-cQk"/>
@@ -372,20 +371,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="tVZ-Ov-fw3">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H2b-vl-i9x">
-                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H2b-vl-i9x">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="qms-Y4-G7h">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CityListCell" id="Ghx-MM-aL1" customClass="CityListCell" customModule="SurfAdvisor" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="84" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ghx-MM-aL1" id="BnA-2p-bMP">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="기사문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfo-ZU-5dq">
-                                                    <rect key="frame" x="62" y="11" width="45" height="21"/>
+                                                    <rect key="frame" x="62" y="11" width="107" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -403,19 +406,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS4-dJ-sSL">
-                                <rect key="frame" x="313" y="38" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-9p-brI">
+                                <rect key="frame" x="322" y="33" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="cancelAction:" destination="E2Q-PJ-2jA" eventType="touchUpInside" id="UYj-KS-kEj"/>
+                                    <action selector="cancelAction:" destination="E2Q-PJ-2jA" eventType="touchUpInside" id="kwA-s3-oOQ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MQz-6d-P5R" firstAttribute="trailing" secondItem="tVZ-Ov-fw3" secondAttribute="trailing" id="7ac-SJ-glL"/>
+                            <constraint firstItem="H2b-vl-i9x" firstAttribute="trailing" secondItem="MQz-6d-P5R" secondAttribute="trailing" id="ahJ-y6-Ujh"/>
+                            <constraint firstItem="H2b-vl-i9x" firstAttribute="top" secondItem="MQz-6d-P5R" secondAttribute="top" id="dfz-0d-WZs"/>
                             <constraint firstItem="tVZ-Ov-fw3" firstAttribute="leading" secondItem="57I-DE-2mm" secondAttribute="leading" id="eM4-cf-GYE"/>
+                            <constraint firstItem="H2b-vl-i9x" firstAttribute="bottom" secondItem="MQz-6d-P5R" secondAttribute="bottom" id="j5o-iQ-WyP"/>
+                            <constraint firstItem="H2b-vl-i9x" firstAttribute="leading" secondItem="MQz-6d-P5R" secondAttribute="leading" id="nB7-4x-mI8"/>
                             <constraint firstItem="tVZ-Ov-fw3" firstAttribute="top" secondItem="57I-DE-2mm" secondAttribute="top" id="tPW-BU-EWr"/>
                             <constraint firstItem="MQz-6d-P5R" firstAttribute="bottom" secondItem="tVZ-Ov-fw3" secondAttribute="bottom" id="xni-Ax-iEf"/>
                         </constraints>
@@ -423,6 +430,7 @@
                     </view>
                     <connections>
                         <outlet property="locationTbV" destination="H2b-vl-i9x" id="c7K-Od-N6H"/>
+                        <outlet property="searchBar" destination="qms-Y4-G7h" id="E5P-kg-GZd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-Dz-wFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
