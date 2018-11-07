@@ -60,15 +60,8 @@ class LocationVC: UIViewController {
             print("city list err")
         }
     }
-
-    
-    @IBAction func cancelAction(_ sender: UIButton) {
-        self.dismiss(animated: true) {
-
-        }
-    }
-    
 }
+
 extension LocationVC: UISearchBarDelegate {
     
     // 텍스트 입력시 필터링
@@ -106,7 +99,9 @@ extension LocationVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        
+        NotificationCenter.default.post(name: NSNotification.Name("setLocation"), object: filteredArr[indexPath.row].cName)
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

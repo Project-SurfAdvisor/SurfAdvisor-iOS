@@ -14,8 +14,8 @@ struct SearchResultService: APIService, RequestService{
     let URL = url("/collection/search")
     typealias NetworkData = SearchResultData
     
-    func getGradeSearchResult(date: String, longitude: Double, latitude: Double, completion: @escaping ([Place]) -> Void, error: @escaping (Int) -> Void) {
-        let gradeURL = URL + "/iOSgradeList?si_date=\(date)&longitude=\(longitude)&latitude=\(latitude)"
+    func getGradeSearchResult(date: String, location: String, completion: @escaping ([Place]) -> Void, error: @escaping (Int) -> Void) {
+        let gradeURL = URL + "/gradeList?si_date=\(date)&c_name=\(location)"
         
         gettable(gradeURL, body: nil, header: nil) { res in
             switch res {
@@ -31,8 +31,8 @@ struct SearchResultService: APIService, RequestService{
     }
     
     
-    func getDistanceSearchResult(date: String, longitude: Double, latitude: Double, completion: @escaping ([Place]) -> Void, error: @escaping (Int) -> Void) {
-        let distanceURL = URL + "/iOSdistanceList?si_date=\(date)&longitude=\(longitude)&latitude=\(latitude)"
+    func getDistanceSearchResult(date: String, location: String, completion: @escaping ([Place]) -> Void, error: @escaping (Int) -> Void) {
+        let distanceURL =  URL + "/distanceList?si_date=\(date)&c_name=\(location)"
         
         gettable(distanceURL, body: nil, header: nil) { res in
             switch res {

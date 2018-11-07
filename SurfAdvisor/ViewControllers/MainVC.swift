@@ -12,13 +12,25 @@ class MainVC: UIViewController {
     @IBOutlet weak var dateTxf: UITextField!
     @IBOutlet weak var locationTxf: UITextField!
     var datePicker = UIDatePicker()
-    var date = ""
-    var longitude = 0.0
-    var latitude = 0.0
+    var date = ""  {
+        didSet {
+            self.dateTxf.text = date
+        }
+    }
+   
+    var location = "" {
+        didSet {
+            self.locationTxf.text = location
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPickerView()
+        setupDate()
+        let center = NotificationCenter.default
+        center.addObserver(self, selector: #selector(setLocation(noti:)), name: NSNotification.Name("setLocation"), object: nil)
+        
         
 //        let gest = UIGestureRecognizer(target: self, action: #selector(touchView(gest:)))
 //        self.view.addGestureRecognizer(gest)
@@ -28,7 +40,18 @@ class MainVC: UIViewController {
 //        self.view.endEditing(true)
 //    }
     
-    func setupPickerView() {
+    @objc func setLocation(noti: Notification) {
+        guard let loc = noti.object as? String else {return}
+        self.location = loc
+    }
+    
+    private func setupDate() {
+        let dateFommatter = DateFormatter()
+        dateFommatter.dateFormat = "yyyy.MM.dd"
+        date = dateFommatter.string(from: Date())
+    }
+    
+    private func setupPickerView() {
         datePicker.datePickerMode = .date
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
@@ -36,36 +59,41 @@ class MainVC: UIViewController {
         toolbar.setItems([doneButton], animated: true)
         dateTxf.inputAccessoryView = toolbar
         dateTxf.inputView = datePicker
-        
     }
 
     @objc func chooseDate() {
         let dateFommatter = DateFormatter()
         dateFommatter.dateFormat = "yyyy.MM.dd"
-        dateTxf.text = dateFommatter.string(from: datePicker.date)
+        date = dateFommatter.string(from: datePicker.date)
         view.endEditing(true)
     }
     
     @IBAction func locationAction(_ sender: UIButton) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LocationVC") as! LocationVC
         self.navigationController?.pushViewController(vc, animated: true)
-//        self.present(vc, animated: true)
     }
     
     @IBAction func searchAction(_ sender: UIButton) {
         
-        SearchResultService.shareInstance.getGradeSearchResult(date: self.date, longitude: self.longitude, latitude: self.latitude, completion: { (places) in
+        if locationTxf.text == "" {
+            let alertController = UIAlertController(title: "경고", message: "위치를 입력하세요.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "확인", style: .cancel)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true)
             
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchResultVC") as! SearchResultVC
-            vc.places = places
-            vc.date = self.date
-            vc.longitude = self.longitude
-            vc.latitude = self.latitude
-            self.navigationController?.pushViewController(vc, animated: true)
-        }) { (err) in
-            print("검색 결과 실패")
+        } else {
+            let alertController = UIAlertController(title: "알림", message: "날짜(\(date))와 위치(\(location))가 맞습니까?", preferredStyle: .alert)
+            let cancelAction = UIAlertAction(title: "취소", style: .cancel)
+            let okAction = UIAlertAction(title: "확인", style: .default) { (alert) in
+                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchResultVC") as! SearchResultVC
+                vc.location = self.location
+                vc.date = self.date
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            alertController.addAction(cancelAction)
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true)
         }
     }
-    
-    
 }

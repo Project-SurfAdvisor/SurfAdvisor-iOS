@@ -15,8 +15,7 @@ class SearchResultVC: UIViewController {
         }
     }
     var date = ""
-    var longitude = 0.0
-    var latitude = 0.0
+    var location = ""
     @IBOutlet weak var resultTbV: UITableView!
     
     override func viewDidLoad() {
@@ -31,7 +30,7 @@ class SearchResultVC: UIViewController {
     
     @IBAction func selectOptionAction(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-            SearchResultService.shareInstance.getGradeSearchResult(date: self.date, longitude: self.longitude, latitude: self.latitude, completion: { (places) in
+            SearchResultService.shareInstance.getGradeSearchResult(date: self.date, location: location, completion: { (places) in
                 
                 self.places = places
                 
@@ -40,7 +39,7 @@ class SearchResultVC: UIViewController {
             }
 
         } else {
-            SearchResultService.shareInstance.getDistanceSearchResult(date: self.date, longitude: self.longitude, latitude: self.latitude, completion: { (places) in
+            SearchResultService.shareInstance.getDistanceSearchResult(date: self.date, location: location, completion: { (places) in
                 
                 self.places = places
                 

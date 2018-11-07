@@ -146,8 +146,8 @@
 		CBA9367A2178F5A800060C15 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CBA9367C2178F5F300060C15 /* SearchResultVC.swift */,
 				CB54CA57217B9A6200688F47 /* MainVC.swift */,
+				CBA9367C2178F5F300060C15 /* SearchResultVC.swift */,
 				CB54CA59217BA01D00688F47 /* DateVC.swift */,
 				CB54CA5B217BA02800688F47 /* LocationVC.swift */,
 				CB54CA5D217C381B00688F47 /* DetailVC.swift */,
