@@ -8,18 +8,23 @@
 
 import UIKit
 
-class InfoDetailCell: UITableViewCell {
+class SurfShopInfoCell: UITableViewCell {
 
     @IBOutlet weak var infoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
-    
-    
+    @IBOutlet weak var siteLabel: UILabel!
+    @IBOutlet weak var introductionLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    var phoneNum: String?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
     @IBAction func callAction(_ sender: UIButton) {
+        
+        
     }
-    
 }

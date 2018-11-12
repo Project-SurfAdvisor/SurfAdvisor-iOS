@@ -79,7 +79,8 @@ extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
-        
+        vc.areaId = self.places[indexPath.row].saID
+        vc.date = self.date
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

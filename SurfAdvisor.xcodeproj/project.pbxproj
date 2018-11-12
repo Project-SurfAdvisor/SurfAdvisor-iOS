@@ -36,6 +36,8 @@
 		CB774FD82199272500EC1357 /* SurfShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD32199272500EC1357 /* SurfShopCell.swift */; };
 		CB774FD92199272500EC1357 /* InfoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD42199272500EC1357 /* InfoDetailCell.swift */; };
 		CB774FDC219981E800EC1357 /* UIImageView+imageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */; };
+		CB774FDE2199C1C100EC1357 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FDD2199C1C100EC1357 /* RestaurantCell.swift */; };
+		CB774FE02199C1CB00EC1357 /* HotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FDF2199C1CB00EC1357 /* HotelCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		CB774FD32199272500EC1357 /* SurfShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfShopCell.swift; sourceTree = "<group>"; };
 		CB774FD42199272500EC1357 /* InfoDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailCell.swift; sourceTree = "<group>"; };
 		CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+imageFromUrl.swift"; sourceTree = "<group>"; };
+		CB774FDD2199C1C100EC1357 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		CB774FDF2199C1CB00EC1357 /* HotelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 				CB774FD42199272500EC1357 /* InfoDetailCell.swift */,
 				CB774FD12199272500EC1357 /* SearchResultCell.swift */,
 				CB774FD32199272500EC1357 /* SurfShopCell.swift */,
+				CB774FDD2199C1C100EC1357 /* RestaurantCell.swift */,
+				CB774FDF2199C1CB00EC1357 /* HotelCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +347,7 @@
 				CB774FBD2199270700EC1357 /* SearchResultData.swift in Sources */,
 				CB774FC82199271000EC1357 /* AreaDetailService.swift in Sources */,
 				CB774FC92199271000EC1357 /* CityListService.swift in Sources */,
+				CB774FDE2199C1C100EC1357 /* RestaurantCell.swift in Sources */,
 				CB774FCB2199271000EC1357 /* AreaInfoService.swift in Sources */,
 				CB774FC62199271000EC1357 /* NetworkResult.swift in Sources */,
 				CB774FD92199272500EC1357 /* InfoDetailCell.swift in Sources */,
@@ -354,6 +361,7 @@
 				CB774FB12199262400EC1357 /* DetailVC.swift in Sources */,
 				CB774FD62199272500EC1357 /* SearchResultCell.swift in Sources */,
 				CB774FD72199272500EC1357 /* CityListCell.swift in Sources */,
+				CB774FE02199C1CB00EC1357 /* HotelCell.swift in Sources */,
 				CB774FBA2199270700EC1357 /* CityListData.swift in Sources */,
 				CB774FD82199272500EC1357 /* SurfShopCell.swift in Sources */,
 			);

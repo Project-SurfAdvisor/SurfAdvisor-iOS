@@ -16,11 +16,14 @@ class DetailVC: UIViewController {
     @IBOutlet weak var hotelCV: UICollectionView!
     @IBOutlet weak var forcastTbV: UITableView!
     
+    var areaId = 0
+    var date = ""
     var area: Area? {
         didSet{
             self.forcastTbV.reloadData()
         }
     }
+    
     var areaInfo: Info? {
         didSet{
             self.surfShopCV.reloadData()
@@ -37,13 +40,13 @@ class DetailVC: UIViewController {
     }
     
     private func initData() {
-        AreaDetailService.shareInstance.getAreaDetail(date: "2018.11.15", id: 1, completion: { (area) in
+        AreaDetailService.shareInstance.getAreaDetail(date: self.date, id: self.areaId, completion: { (area) in
             self.area = area
         }) { (err) in
             print("detail 에러")
         }
         
-        AreaInfoService.shareInstance.getAreaInfo(id: 1, completion: { (info) in
+        AreaInfoService.shareInstance.getAreaInfo(id: self.areaId, completion: { (info) in
             self.areaInfo = info
         }) { (err) in
             print("info 에러")
@@ -70,6 +73,13 @@ class DetailVC: UIViewController {
     @IBAction func infoAction(_ sender: UIButton) {
         forcastView.isHidden = true
         infoView.isHidden = false
+    }
+    
+    @IBAction func moreAction(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfoDetailVC") as! InfoDetailVC
+        vc.category = sender.tag
+        vc.id = self.areaId
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -123,11 +133,4 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
             return cell
         }
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfoDetailVC") as! InfoDetailVC
-        
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
 }
