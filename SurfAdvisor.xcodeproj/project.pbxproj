@@ -3,209 +3,215 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB54CA58217B9A6200688F47 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CA57217B9A6200688F47 /* MainVC.swift */; };
-		CB54CA5A217BA01D00688F47 /* DateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CA59217BA01D00688F47 /* DateVC.swift */; };
-		CB54CA5C217BA02800688F47 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CA5B217BA02800688F47 /* LocationVC.swift */; };
-		CB54CA5E217C381C00688F47 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54CA5D217C381B00688F47 /* DetailVC.swift */; };
-		CB731B14217E186C0080FA57 /* InfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB731B13217E186C0080FA57 /* InfoDetailVC.swift */; };
-		CB731B16217E1A450080FA57 /* InfoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB731B15217E1A450080FA57 /* InfoDetailCell.swift */; };
-		CB731B18217E1A540080FA57 /* SurfShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB731B17217E1A540080FA57 /* SurfShopCell.swift */; };
-		CB731B1A217E292D0080FA57 /* ForcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB731B19217E292D0080FA57 /* ForcastCell.swift */; };
-		CB9637312176602400FE926E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9637302176602400FE926E /* AppDelegate.swift */; };
-		CB9637362176602400FE926E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637342176602400FE926E /* Main.storyboard */; };
-		CB9637382176602600FE926E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9637372176602600FE926E /* Assets.xcassets */; };
-		CB96373B2176602600FE926E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9637392176602600FE926E /* LaunchScreen.storyboard */; };
-		CBA9367D2178F5F300060C15 /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367C2178F5F300060C15 /* SearchResultVC.swift */; };
-		CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9367E2178F95900060C15 /* SearchResultCell.swift */; };
-		CBB302712190A6F600F68A8A /* CityListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB302702190A6F600F68A8A /* CityListService.swift */; };
-		CBB302732190A9E300F68A8A /* CityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB302722190A9E300F68A8A /* CityListCell.swift */; };
-		CBC533E1217F3AEB0084E145 /* CityListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E0217F3AEB0084E145 /* CityListData.swift */; };
-		CBC533E4217F3B6C0084E145 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E3217F3B6C0084E145 /* HTTPStatusCode.swift */; };
-		CBC533E6217F3B9C0084E145 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E5217F3B9C0084E145 /* NetworkResult.swift */; };
-		CBC533E8217F3BA90084E145 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E7217F3BA90084E145 /* RequestService.swift */; };
-		CBC533EA217F3BCA0084E145 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533E9217F3BCA0084E145 /* APIService.swift */; };
-		CBC533EC217F3E810084E145 /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533EB217F3E810084E145 /* SearchResultData.swift */; };
-		CBC533EE217F40C90084E145 /* AreaDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533ED217F40C90084E145 /* AreaDetailData.swift */; };
-		CBC533F0217F431A0084E145 /* AreaInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533EF217F431A0084E145 /* AreaInfoData.swift */; };
-		CBC533F6217F468B0084E145 /* SearchResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533F5217F468B0084E145 /* SearchResultService.swift */; };
-		CBC533F8217F68A10084E145 /* AreaDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533F7217F68A10084E145 /* AreaDetailService.swift */; };
-		CBC533FA217F69CB0084E145 /* AreaInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC533F9217F69CB0084E145 /* AreaInfoService.swift */; };
-		DBD71C45F5545482A5781667 /* Pods_SurfAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */; };
+		05A1C230DC188D4D8D6C9BB5 /* Pods_SurfAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588CE5569ECE058CCFC72CE5 /* Pods_SurfAdvisor.framework */; };
+		CB2D3A982199251100BC71C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A972199251100BC71C2 /* AppDelegate.swift */; };
+		CB2D3A9A2199251100BC71C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A992199251100BC71C2 /* ViewController.swift */; };
+		CB2D3A9D2199251100BC71C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A9B2199251100BC71C2 /* Main.storyboard */; };
+		CB2D3A9F2199251200BC71C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A9E2199251200BC71C2 /* Assets.xcassets */; };
+		CB2D3AA22199251200BC71C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3AA02199251200BC71C2 /* LaunchScreen.storyboard */; };
+		CB774FB02199262400EC1357 /* InfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAA2199262400EC1357 /* InfoDetailVC.swift */; };
+		CB774FB12199262400EC1357 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAB2199262400EC1357 /* DetailVC.swift */; };
+		CB774FB22199262400EC1357 /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAC2199262400EC1357 /* SearchResultVC.swift */; };
+		CB774FB32199262400EC1357 /* DateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAD2199262400EC1357 /* DateVC.swift */; };
+		CB774FB42199262400EC1357 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAE2199262400EC1357 /* LocationVC.swift */; };
+		CB774FB52199262400EC1357 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAF2199262400EC1357 /* MainVC.swift */; };
+		CB774FBA2199270700EC1357 /* CityListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FB62199270700EC1357 /* CityListData.swift */; };
+		CB774FBB2199270700EC1357 /* AreaDetailData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FB72199270700EC1357 /* AreaDetailData.swift */; };
+		CB774FBC2199270700EC1357 /* AreaInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FB82199270700EC1357 /* AreaInfoData.swift */; };
+		CB774FBD2199270700EC1357 /* SearchResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FB92199270700EC1357 /* SearchResultData.swift */; };
+		CB774FC62199271000EC1357 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FBE2199271000EC1357 /* NetworkResult.swift */; };
+		CB774FC72199271000EC1357 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FBF2199271000EC1357 /* APIService.swift */; };
+		CB774FC82199271000EC1357 /* AreaDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FC02199271000EC1357 /* AreaDetailService.swift */; };
+		CB774FC92199271000EC1357 /* CityListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FC12199271000EC1357 /* CityListService.swift */; };
+		CB774FCA2199271000EC1357 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FC22199271000EC1357 /* HTTPStatusCode.swift */; };
+		CB774FCB2199271000EC1357 /* AreaInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FC32199271000EC1357 /* AreaInfoService.swift */; };
+		CB774FCC2199271000EC1357 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FC42199271000EC1357 /* RequestService.swift */; };
+		CB774FCD2199271000EC1357 /* SearchResultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FC52199271000EC1357 /* SearchResultService.swift */; };
+		CB774FCF2199271A00EC1357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB774FCE2199271A00EC1357 /* Main.storyboard */; };
+		CB774FD52199272500EC1357 /* ForcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD02199272500EC1357 /* ForcastCell.swift */; };
+		CB774FD62199272500EC1357 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD12199272500EC1357 /* SearchResultCell.swift */; };
+		CB774FD72199272500EC1357 /* CityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD22199272500EC1357 /* CityListCell.swift */; };
+		CB774FD82199272500EC1357 /* SurfShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD32199272500EC1357 /* SurfShopCell.swift */; };
+		CB774FD92199272500EC1357 /* InfoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD42199272500EC1357 /* InfoDetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfAdvisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0310893B1EC2EE848020731 /* Pods-SurfAdvisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.release.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.release.xcconfig"; sourceTree = "<group>"; };
-		CB54CA57217B9A6200688F47 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		CB54CA59217BA01D00688F47 /* DateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateVC.swift; sourceTree = "<group>"; };
-		CB54CA5B217BA02800688F47 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
-		CB54CA5D217C381B00688F47 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		CB731B13217E186C0080FA57 /* InfoDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailVC.swift; sourceTree = "<group>"; };
-		CB731B15217E1A450080FA57 /* InfoDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailCell.swift; sourceTree = "<group>"; };
-		CB731B17217E1A540080FA57 /* SurfShopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfShopCell.swift; sourceTree = "<group>"; };
-		CB731B19217E292D0080FA57 /* ForcastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForcastCell.swift; sourceTree = "<group>"; };
-		CB96372D2176602400FE926E /* SurfAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB9637302176602400FE926E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB9637352176602400FE926E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CB9637372176602600FE926E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CB96373A2176602600FE926E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CB96373C2176602600FE926E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBA9367C2178F5F300060C15 /* SearchResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
-		CBA9367E2178F95900060C15 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
-		CBB302702190A6F600F68A8A /* CityListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListService.swift; sourceTree = "<group>"; };
-		CBB302722190A9E300F68A8A /* CityListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListCell.swift; sourceTree = "<group>"; };
-		CBC533E0217F3AEB0084E145 /* CityListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListData.swift; sourceTree = "<group>"; };
-		CBC533E3217F3B6C0084E145 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
-		CBC533E5217F3B9C0084E145 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
-		CBC533E7217F3BA90084E145 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
-		CBC533E9217F3BCA0084E145 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		CBC533EB217F3E810084E145 /* SearchResultData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchResultData.swift; path = SurfAdvisor/Model/SearchResultData.swift; sourceTree = SOURCE_ROOT; };
-		CBC533ED217F40C90084E145 /* AreaDetailData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDetailData.swift; sourceTree = "<group>"; };
-		CBC533EF217F431A0084E145 /* AreaInfoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoData.swift; sourceTree = "<group>"; };
-		CBC533F5217F468B0084E145 /* SearchResultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultService.swift; sourceTree = "<group>"; };
-		CBC533F7217F68A10084E145 /* AreaDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDetailService.swift; sourceTree = "<group>"; };
-		CBC533F9217F69CB0084E145 /* AreaInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaInfoService.swift; sourceTree = "<group>"; };
-		F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.debug.xcconfig"; path = "Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
+		1B3571E7DAF1636B3778986E /* Pods-SurfAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
+		588CE5569ECE058CCFC72CE5 /* Pods_SurfAdvisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfAdvisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A7AAB89F5DAE323D74301F /* Pods-SurfAdvisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.release.xcconfig"; sourceTree = "<group>"; };
+		CB2D3A942199251100BC71C2 /* SurfAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2D3A972199251100BC71C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB2D3A992199251100BC71C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB2D3A9C2199251100BC71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB2D3A9E2199251200BC71C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB2D3AA12199251200BC71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB2D3AA32199251200BC71C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB774FAA2199262400EC1357 /* InfoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailVC.swift; sourceTree = "<group>"; };
+		CB774FAB2199262400EC1357 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		CB774FAC2199262400EC1357 /* SearchResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
+		CB774FAD2199262400EC1357 /* DateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateVC.swift; sourceTree = "<group>"; };
+		CB774FAE2199262400EC1357 /* LocationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
+		CB774FAF2199262400EC1357 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		CB774FB62199270700EC1357 /* CityListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListData.swift; sourceTree = "<group>"; };
+		CB774FB72199270700EC1357 /* AreaDetailData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaDetailData.swift; sourceTree = "<group>"; };
+		CB774FB82199270700EC1357 /* AreaInfoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaInfoData.swift; sourceTree = "<group>"; };
+		CB774FB92199270700EC1357 /* SearchResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultData.swift; sourceTree = "<group>"; };
+		CB774FBE2199271000EC1357 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		CB774FBF2199271000EC1357 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CB774FC02199271000EC1357 /* AreaDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaDetailService.swift; sourceTree = "<group>"; };
+		CB774FC12199271000EC1357 /* CityListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListService.swift; sourceTree = "<group>"; };
+		CB774FC22199271000EC1357 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		CB774FC32199271000EC1357 /* AreaInfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaInfoService.swift; sourceTree = "<group>"; };
+		CB774FC42199271000EC1357 /* RequestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		CB774FC52199271000EC1357 /* SearchResultService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultService.swift; sourceTree = "<group>"; };
+		CB774FCE2199271A00EC1357 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CB774FD02199272500EC1357 /* ForcastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForcastCell.swift; sourceTree = "<group>"; };
+		CB774FD12199272500EC1357 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		CB774FD22199272500EC1357 /* CityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListCell.swift; sourceTree = "<group>"; };
+		CB774FD32199272500EC1357 /* SurfShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfShopCell.swift; sourceTree = "<group>"; };
+		CB774FD42199272500EC1357 /* InfoDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CB96372A2176602400FE926E /* Frameworks */ = {
+		CB2D3A912199251100BC71C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBD71C45F5545482A5781667 /* Pods_SurfAdvisor.framework in Frameworks */,
+				05A1C230DC188D4D8D6C9BB5 /* Pods_SurfAdvisor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16CCB967455F35C97B8669F1 /* Frameworks */ = {
+		CB2D3A8B2199251100BC71C2 = {
 			isa = PBXGroup;
 			children = (
-				8A6F10B5AC6939DEB2BFDC0C /* Pods_SurfAdvisor.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B57AB035A154B16C0738628F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */,
-				B0310893B1EC2EE848020731 /* Pods-SurfAdvisor.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		CB9637242176602400FE926E = {
-			isa = PBXGroup;
-			children = (
-				CB96372F2176602400FE926E /* SurfAdvisor */,
-				CB96372E2176602400FE926E /* Products */,
-				B57AB035A154B16C0738628F /* Pods */,
-				16CCB967455F35C97B8669F1 /* Frameworks */,
+				CB2D3A962199251100BC71C2 /* SurfAdvisor */,
+				CB2D3A952199251100BC71C2 /* Products */,
+				CC439D3C789D3414B317685B /* Pods */,
+				F1344292D8C5D6DCE58F778D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		CB96372E2176602400FE926E /* Products */ = {
+		CB2D3A952199251100BC71C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB96372D2176602400FE926E /* SurfAdvisor.app */,
+				CB2D3A942199251100BC71C2 /* SurfAdvisor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CB96372F2176602400FE926E /* SurfAdvisor */ = {
+		CB2D3A962199251100BC71C2 /* SurfAdvisor */ = {
 			isa = PBXGroup;
 			children = (
-				CBC533DF217F3AD50084E145 /* Model */,
-				CBC533E2217F3B350084E145 /* Services */,
-				CBA9367B2178F5AB00060C15 /* Views */,
-				CBA9367A2178F5A800060C15 /* ViewControllers */,
-				CBA936792178F5A600060C15 /* Storyboard */,
-				CB9637302176602400FE926E /* AppDelegate.swift */,
-				CB9637372176602600FE926E /* Assets.xcassets */,
-				CB9637392176602600FE926E /* LaunchScreen.storyboard */,
-				CB96373C2176602600FE926E /* Info.plist */,
+				CB774F84219925E000EC1357 /* ViewControllers */,
+				CB774F83219925D700EC1357 /* Views */,
+				CB774F82219925CF00EC1357 /* Storyboard */,
+				CB774F81219925C600EC1357 /* Models */,
+				CB774F80219925B800EC1357 /* Services */,
+				CB2D3A972199251100BC71C2 /* AppDelegate.swift */,
+				CB2D3A992199251100BC71C2 /* ViewController.swift */,
+				CB2D3A9B2199251100BC71C2 /* Main.storyboard */,
+				CB2D3A9E2199251200BC71C2 /* Assets.xcassets */,
+				CB2D3AA02199251200BC71C2 /* LaunchScreen.storyboard */,
+				CB2D3AA32199251200BC71C2 /* Info.plist */,
 			);
 			path = SurfAdvisor;
 			sourceTree = "<group>";
 		};
-		CBA936792178F5A600060C15 /* Storyboard */ = {
+		CB774F80219925B800EC1357 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CB9637342176602400FE926E /* Main.storyboard */,
+				CB774FBF2199271000EC1357 /* APIService.swift */,
+				CB774FC02199271000EC1357 /* AreaDetailService.swift */,
+				CB774FC32199271000EC1357 /* AreaInfoService.swift */,
+				CB774FC12199271000EC1357 /* CityListService.swift */,
+				CB774FC22199271000EC1357 /* HTTPStatusCode.swift */,
+				CB774FBE2199271000EC1357 /* NetworkResult.swift */,
+				CB774FC42199271000EC1357 /* RequestService.swift */,
+				CB774FC52199271000EC1357 /* SearchResultService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB774F81219925C600EC1357 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB774FB72199270700EC1357 /* AreaDetailData.swift */,
+				CB774FB82199270700EC1357 /* AreaInfoData.swift */,
+				CB774FB62199270700EC1357 /* CityListData.swift */,
+				CB774FB92199270700EC1357 /* SearchResultData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB774F82219925CF00EC1357 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB774FCE2199271A00EC1357 /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		CBA9367A2178F5A800060C15 /* ViewControllers */ = {
+		CB774F83219925D700EC1357 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CB54CA57217B9A6200688F47 /* MainVC.swift */,
-				CBA9367C2178F5F300060C15 /* SearchResultVC.swift */,
-				CB54CA59217BA01D00688F47 /* DateVC.swift */,
-				CB54CA5B217BA02800688F47 /* LocationVC.swift */,
-				CB54CA5D217C381B00688F47 /* DetailVC.swift */,
-				CB731B13217E186C0080FA57 /* InfoDetailVC.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		CBA9367B2178F5AB00060C15 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CBA9367E2178F95900060C15 /* SearchResultCell.swift */,
-				CBB302722190A9E300F68A8A /* CityListCell.swift */,
-				CB731B15217E1A450080FA57 /* InfoDetailCell.swift */,
-				CB731B17217E1A540080FA57 /* SurfShopCell.swift */,
-				CB731B19217E292D0080FA57 /* ForcastCell.swift */,
+				CB774FD22199272500EC1357 /* CityListCell.swift */,
+				CB774FD02199272500EC1357 /* ForcastCell.swift */,
+				CB774FD42199272500EC1357 /* InfoDetailCell.swift */,
+				CB774FD12199272500EC1357 /* SearchResultCell.swift */,
+				CB774FD32199272500EC1357 /* SurfShopCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CBC533DF217F3AD50084E145 /* Model */ = {
+		CB774F84219925E000EC1357 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CBC533EB217F3E810084E145 /* SearchResultData.swift */,
-				CBC533E0217F3AEB0084E145 /* CityListData.swift */,
-				CBC533ED217F40C90084E145 /* AreaDetailData.swift */,
-				CBC533EF217F431A0084E145 /* AreaInfoData.swift */,
+				CB774FAD2199262400EC1357 /* DateVC.swift */,
+				CB774FAB2199262400EC1357 /* DetailVC.swift */,
+				CB774FAA2199262400EC1357 /* InfoDetailVC.swift */,
+				CB774FAE2199262400EC1357 /* LocationVC.swift */,
+				CB774FAF2199262400EC1357 /* MainVC.swift */,
+				CB774FAC2199262400EC1357 /* SearchResultVC.swift */,
 			);
-			path = Model;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		CBC533E2217F3B350084E145 /* Services */ = {
+		CC439D3C789D3414B317685B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CBC533E3217F3B6C0084E145 /* HTTPStatusCode.swift */,
-				CBC533E5217F3B9C0084E145 /* NetworkResult.swift */,
-				CBC533E7217F3BA90084E145 /* RequestService.swift */,
-				CBC533E9217F3BCA0084E145 /* APIService.swift */,
-				CBB302702190A6F600F68A8A /* CityListService.swift */,
-				CBC533F5217F468B0084E145 /* SearchResultService.swift */,
-				CBC533F7217F68A10084E145 /* AreaDetailService.swift */,
-				CBC533F9217F69CB0084E145 /* AreaInfoService.swift */,
+				1B3571E7DAF1636B3778986E /* Pods-SurfAdvisor.debug.xcconfig */,
+				B7A7AAB89F5DAE323D74301F /* Pods-SurfAdvisor.release.xcconfig */,
 			);
-			path = Services;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1344292D8C5D6DCE58F778D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				588CE5569ECE058CCFC72CE5 /* Pods_SurfAdvisor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB96372C2176602400FE926E /* SurfAdvisor */ = {
+		CB2D3A932199251100BC71C2 /* SurfAdvisor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB96373F2176602600FE926E /* Build configuration list for PBXNativeTarget "SurfAdvisor" */;
+			buildConfigurationList = CB2D3AA62199251200BC71C2 /* Build configuration list for PBXNativeTarget "SurfAdvisor" */;
 			buildPhases = (
-				05B27CD13E0364250E441993 /* [CP] Check Pods Manifest.lock */,
-				CB9637292176602400FE926E /* Sources */,
-				CB96372A2176602400FE926E /* Frameworks */,
-				CB96372B2176602400FE926E /* Resources */,
-				C94E882D76DA981335400FA7 /* [CP] Embed Pods Frameworks */,
+				AAF1F9B78B98B7BD3E67E511 /* [CP] Check Pods Manifest.lock */,
+				CB2D3A902199251100BC71C2 /* Sources */,
+				CB2D3A912199251100BC71C2 /* Frameworks */,
+				CB2D3A922199251100BC71C2 /* Resources */,
+				59AD2AB70280ACE0EF816178 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,88 +219,74 @@
 			);
 			name = SurfAdvisor;
 			productName = SurfAdvisor;
-			productReference = CB96372D2176602400FE926E /* SurfAdvisor.app */;
+			productReference = CB2D3A942199251100BC71C2 /* SurfAdvisor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CB9637252176602400FE926E /* Project object */ = {
+		CB2D3A8C2199251100BC71C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "박세은";
 				TargetAttributes = {
-					CB96372C2176602400FE926E = {
-						CreatedOnToolsVersion = 9.4.1;
-						ProvisioningStyle = Automatic;
+					CB2D3A932199251100BC71C2 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = CB9637282176602400FE926E /* Build configuration list for PBXProject "SurfAdvisor" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = CB2D3A8F2199251100BC71C2 /* Build configuration list for PBXProject "SurfAdvisor" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = CB9637242176602400FE926E;
-			productRefGroup = CB96372E2176602400FE926E /* Products */;
+			mainGroup = CB2D3A8B2199251100BC71C2;
+			productRefGroup = CB2D3A952199251100BC71C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB96372C2176602400FE926E /* SurfAdvisor */,
+				CB2D3A932199251100BC71C2 /* SurfAdvisor */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CB96372B2176602400FE926E /* Resources */ = {
+		CB2D3A922199251100BC71C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB96373B2176602600FE926E /* LaunchScreen.storyboard in Resources */,
-				CB9637382176602600FE926E /* Assets.xcassets in Resources */,
-				CB9637362176602400FE926E /* Main.storyboard in Resources */,
+				CB2D3AA22199251200BC71C2 /* LaunchScreen.storyboard in Resources */,
+				CB2D3A9F2199251200BC71C2 /* Assets.xcassets in Resources */,
+				CB2D3A9D2199251100BC71C2 /* Main.storyboard in Resources */,
+				CB774FCF2199271A00EC1357 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05B27CD13E0364250E441993 /* [CP] Check Pods Manifest.lock */ = {
+		59AD2AB70280ACE0EF816178 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SurfAdvisor-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C94E882D76DA981335400FA7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -303,58 +295,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAF1F9B78B98B7BD3E67E511 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SurfAdvisor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CB9637292176602400FE926E /* Sources */ = {
+		CB2D3A902199251100BC71C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB54CA58217B9A6200688F47 /* MainVC.swift in Sources */,
-				CBA9367D2178F5F300060C15 /* SearchResultVC.swift in Sources */,
-				CBB302732190A9E300F68A8A /* CityListCell.swift in Sources */,
-				CB54CA5A217BA01D00688F47 /* DateVC.swift in Sources */,
-				CBA9367F2178F95900060C15 /* SearchResultCell.swift in Sources */,
-				CBC533EC217F3E810084E145 /* SearchResultData.swift in Sources */,
-				CB731B1A217E292D0080FA57 /* ForcastCell.swift in Sources */,
-				CBC533FA217F69CB0084E145 /* AreaInfoService.swift in Sources */,
-				CBC533F6217F468B0084E145 /* SearchResultService.swift in Sources */,
-				CBC533F0217F431A0084E145 /* AreaInfoData.swift in Sources */,
-				CB54CA5E217C381C00688F47 /* DetailVC.swift in Sources */,
-				CBB302712190A6F600F68A8A /* CityListService.swift in Sources */,
-				CBC533EA217F3BCA0084E145 /* APIService.swift in Sources */,
-				CBC533E4217F3B6C0084E145 /* HTTPStatusCode.swift in Sources */,
-				CBC533EE217F40C90084E145 /* AreaDetailData.swift in Sources */,
-				CB731B14217E186C0080FA57 /* InfoDetailVC.swift in Sources */,
-				CB9637312176602400FE926E /* AppDelegate.swift in Sources */,
-				CBC533F8217F68A10084E145 /* AreaDetailService.swift in Sources */,
-				CBC533E1217F3AEB0084E145 /* CityListData.swift in Sources */,
-				CB54CA5C217BA02800688F47 /* LocationVC.swift in Sources */,
-				CB731B16217E1A450080FA57 /* InfoDetailCell.swift in Sources */,
-				CB731B18217E1A540080FA57 /* SurfShopCell.swift in Sources */,
-				CBC533E8217F3BA90084E145 /* RequestService.swift in Sources */,
-				CBC533E6217F3B9C0084E145 /* NetworkResult.swift in Sources */,
+				CB774FB32199262400EC1357 /* DateVC.swift in Sources */,
+				CB774FCA2199271000EC1357 /* HTTPStatusCode.swift in Sources */,
+				CB774FCC2199271000EC1357 /* RequestService.swift in Sources */,
+				CB774FB42199262400EC1357 /* LocationVC.swift in Sources */,
+				CB774FB52199262400EC1357 /* MainVC.swift in Sources */,
+				CB774FB22199262400EC1357 /* SearchResultVC.swift in Sources */,
+				CB774FCD2199271000EC1357 /* SearchResultService.swift in Sources */,
+				CB774FBD2199270700EC1357 /* SearchResultData.swift in Sources */,
+				CB774FC82199271000EC1357 /* AreaDetailService.swift in Sources */,
+				CB774FC92199271000EC1357 /* CityListService.swift in Sources */,
+				CB774FCB2199271000EC1357 /* AreaInfoService.swift in Sources */,
+				CB2D3A9A2199251100BC71C2 /* ViewController.swift in Sources */,
+				CB774FC62199271000EC1357 /* NetworkResult.swift in Sources */,
+				CB774FD92199272500EC1357 /* InfoDetailCell.swift in Sources */,
+				CB774FBB2199270700EC1357 /* AreaDetailData.swift in Sources */,
+				CB774FC72199271000EC1357 /* APIService.swift in Sources */,
+				CB774FB02199262400EC1357 /* InfoDetailVC.swift in Sources */,
+				CB774FBC2199270700EC1357 /* AreaInfoData.swift in Sources */,
+				CB2D3A982199251100BC71C2 /* AppDelegate.swift in Sources */,
+				CB774FD52199272500EC1357 /* ForcastCell.swift in Sources */,
+				CB774FB12199262400EC1357 /* DetailVC.swift in Sources */,
+				CB774FD62199272500EC1357 /* SearchResultCell.swift in Sources */,
+				CB774FD72199272500EC1357 /* CityListCell.swift in Sources */,
+				CB774FBA2199270700EC1357 /* CityListData.swift in Sources */,
+				CB774FD82199272500EC1357 /* SurfShopCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB9637342176602400FE926E /* Main.storyboard */ = {
+		CB2D3A9B2199251100BC71C2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB9637352176602400FE926E /* Base */,
+				CB2D3A9C2199251100BC71C2 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		CB9637392176602600FE926E /* LaunchScreen.storyboard */ = {
+		CB2D3AA02199251200BC71C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB96373A2176602600FE926E /* Base */,
+				CB2D3AA12199251200BC71C2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -362,7 +377,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CB96373D2176602600FE926E /* Debug */ = {
+		CB2D3AA42199251200BC71C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,8 +428,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -422,7 +438,7 @@
 			};
 			name = Debug;
 		};
-		CB96373E2176602600FE926E /* Release */ = {
+		CB2D3AA52199251200BC71C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -467,42 +483,48 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		CB9637402176602600FE926E /* Debug */ = {
+		CB2D3AA72199251200BC71C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F50EF38E59A3639351F0E370 /* Pods-SurfAdvisor.debug.xcconfig */;
+			baseConfigurationReference = 1B3571E7DAF1636B3778986E /* Pods-SurfAdvisor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N6JH7RBUA4;
 				INFOPLIST_FILE = SurfAdvisor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = pkse1213.SurfAdvisor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		CB9637412176602600FE926E /* Release */ = {
+		CB2D3AA82199251200BC71C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B0310893B1EC2EE848020731 /* Pods-SurfAdvisor.release.xcconfig */;
+			baseConfigurationReference = B7A7AAB89F5DAE323D74301F /* Pods-SurfAdvisor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N6JH7RBUA4;
 				INFOPLIST_FILE = SurfAdvisor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = pkse1213.SurfAdvisor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -510,25 +532,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB9637282176602400FE926E /* Build configuration list for PBXProject "SurfAdvisor" */ = {
+		CB2D3A8F2199251100BC71C2 /* Build configuration list for PBXProject "SurfAdvisor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB96373D2176602600FE926E /* Debug */,
-				CB96373E2176602600FE926E /* Release */,
+				CB2D3AA42199251200BC71C2 /* Debug */,
+				CB2D3AA52199251200BC71C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB96373F2176602600FE926E /* Build configuration list for PBXNativeTarget "SurfAdvisor" */ = {
+		CB2D3AA62199251200BC71C2 /* Build configuration list for PBXNativeTarget "SurfAdvisor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CB9637402176602600FE926E /* Debug */,
-				CB9637412176602600FE926E /* Release */,
+				CB2D3AA72199251200BC71C2 /* Debug */,
+				CB2D3AA82199251200BC71C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CB9637252176602400FE926E /* Project object */;
+	rootObject = CB2D3A8C2199251100BC71C2 /* Project object */;
 }

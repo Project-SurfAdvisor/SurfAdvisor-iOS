@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SurfAdvisor
 //
-//  Created by 박세은 on 2018. 10. 17..
+//  Created by 박세은 on 2018. 11. 12..
 //  Copyright © 2018년 박세은. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
