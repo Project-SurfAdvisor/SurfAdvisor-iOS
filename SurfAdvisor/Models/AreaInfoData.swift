@@ -9,7 +9,7 @@ import Foundation
 
 struct AreaInfoData: Codable {
     let status: String
-    let data: Info
+    let data:Info
     let message: String
 }
 
@@ -20,41 +20,55 @@ struct Info: Codable {
 }
 
 struct HotelList: Codable {
-    let hName: String
-    let hLongitude, hLatitude: Int
+    let hPhoto: String
+    let hName, hAddress: String
+    let hLongitude, hLatitude: Double
+    let hPhoneNumber: String
     let distance: Double
     let distanceUnit: String
     
     enum CodingKeys: String, CodingKey {
+        case hPhoto = "h_photo"
         case hName = "h_name"
+        case hAddress = "h_address"
         case hLongitude = "h_longitude"
         case hLatitude = "h_latitude"
+        case hPhoneNumber = "h_phoneNumber"
         case distance, distanceUnit
     }
 }
 
-
 struct RestaurantList: Codable {
-    let rName: String
-    let rLongitude, rLatitude: Int
+    let rPhoto: String
+    let rName, rExplain1, rExplain2, rTime: String
+    let rAddress: String
+    let rLongitude, rLatitude: Double
+    let rPhoneNumber: String
     let distance: Double
     let distanceUnit: String
     
     enum CodingKeys: String, CodingKey {
+        case rPhoto = "r_photo"
         case rName = "r_name"
+        case rExplain1 = "r_explain1"
+        case rExplain2 = "r_explain2"
+        case rTime = "r_time"
+        case rAddress = "r_address"
         case rLongitude = "r_longitude"
         case rLatitude = "r_latitude"
+        case rPhoneNumber = "r_phoneNumber"
         case distance, distanceUnit
     }
 }
 
 struct SurfShopList: Codable {
-    let ssPhoto, ssName: String
+    let ssPhoto: String
+    let ssName: String
     let ssSite: String
     let ssIntroduction, ssTime, ssAddress: String
-    let ssLongitude, ssLatitude: Int
+    let ssLongitude, ssLatitude: Double
     let ssPhoneNumber: String
-    let distance: Double
+    let distance: Int
     let distanceUnit: String
     
     enum CodingKeys: String, CodingKey {

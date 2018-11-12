@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		05A1C230DC188D4D8D6C9BB5 /* Pods_SurfAdvisor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588CE5569ECE058CCFC72CE5 /* Pods_SurfAdvisor.framework */; };
 		CB2D3A982199251100BC71C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A972199251100BC71C2 /* AppDelegate.swift */; };
-		CB2D3A9A2199251100BC71C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A992199251100BC71C2 /* ViewController.swift */; };
-		CB2D3A9D2199251100BC71C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A9B2199251100BC71C2 /* Main.storyboard */; };
 		CB2D3A9F2199251200BC71C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A9E2199251200BC71C2 /* Assets.xcassets */; };
 		CB2D3AA22199251200BC71C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3AA02199251200BC71C2 /* LaunchScreen.storyboard */; };
 		CB774FB02199262400EC1357 /* InfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAA2199262400EC1357 /* InfoDetailVC.swift */; };
@@ -37,6 +35,7 @@
 		CB774FD72199272500EC1357 /* CityListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD22199272500EC1357 /* CityListCell.swift */; };
 		CB774FD82199272500EC1357 /* SurfShopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD32199272500EC1357 /* SurfShopCell.swift */; };
 		CB774FD92199272500EC1357 /* InfoDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FD42199272500EC1357 /* InfoDetailCell.swift */; };
+		CB774FDC219981E800EC1357 /* UIImageView+imageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,8 +44,6 @@
 		B7A7AAB89F5DAE323D74301F /* Pods-SurfAdvisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.release.xcconfig"; sourceTree = "<group>"; };
 		CB2D3A942199251100BC71C2 /* SurfAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2D3A972199251100BC71C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB2D3A992199251100BC71C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CB2D3A9C2199251100BC71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB2D3A9E2199251200BC71C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB2D3AA12199251200BC71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB2D3AA32199251200BC71C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +71,7 @@
 		CB774FD22199272500EC1357 /* CityListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityListCell.swift; sourceTree = "<group>"; };
 		CB774FD32199272500EC1357 /* SurfShopCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurfShopCell.swift; sourceTree = "<group>"; };
 		CB774FD42199272500EC1357 /* InfoDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailCell.swift; sourceTree = "<group>"; };
+		CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+imageFromUrl.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +107,13 @@
 		CB2D3A962199251100BC71C2 /* SurfAdvisor */ = {
 			isa = PBXGroup;
 			children = (
+				CB774FDA219981CB00EC1357 /* Utils */,
+				CB774F81219925C600EC1357 /* Models */,
+				CB774F80219925B800EC1357 /* Services */,
 				CB774F84219925E000EC1357 /* ViewControllers */,
 				CB774F83219925D700EC1357 /* Views */,
 				CB774F82219925CF00EC1357 /* Storyboard */,
-				CB774F81219925C600EC1357 /* Models */,
-				CB774F80219925B800EC1357 /* Services */,
 				CB2D3A972199251100BC71C2 /* AppDelegate.swift */,
-				CB2D3A992199251100BC71C2 /* ViewController.swift */,
-				CB2D3A9B2199251100BC71C2 /* Main.storyboard */,
 				CB2D3A9E2199251200BC71C2 /* Assets.xcassets */,
 				CB2D3AA02199251200BC71C2 /* LaunchScreen.storyboard */,
 				CB2D3AA32199251200BC71C2 /* Info.plist */,
@@ -127,14 +124,14 @@
 		CB774F80219925B800EC1357 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CB774FBF2199271000EC1357 /* APIService.swift */,
-				CB774FC02199271000EC1357 /* AreaDetailService.swift */,
-				CB774FC32199271000EC1357 /* AreaInfoService.swift */,
-				CB774FC12199271000EC1357 /* CityListService.swift */,
 				CB774FC22199271000EC1357 /* HTTPStatusCode.swift */,
 				CB774FBE2199271000EC1357 /* NetworkResult.swift */,
+				CB774FBF2199271000EC1357 /* APIService.swift */,
 				CB774FC42199271000EC1357 /* RequestService.swift */,
+				CB774FC12199271000EC1357 /* CityListService.swift */,
 				CB774FC52199271000EC1357 /* SearchResultService.swift */,
+				CB774FC32199271000EC1357 /* AreaInfoService.swift */,
+				CB774FC02199271000EC1357 /* AreaDetailService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -181,6 +178,14 @@
 				CB774FAC2199262400EC1357 /* SearchResultVC.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CB774FDA219981CB00EC1357 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CC439D3C789D3414B317685B /* Pods */ = {
@@ -262,7 +267,6 @@
 			files = (
 				CB2D3AA22199251200BC71C2 /* LaunchScreen.storyboard in Resources */,
 				CB2D3A9F2199251200BC71C2 /* Assets.xcassets in Resources */,
-				CB2D3A9D2199251100BC71C2 /* Main.storyboard in Resources */,
 				CB774FCF2199271A00EC1357 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,13 +342,13 @@
 				CB774FC82199271000EC1357 /* AreaDetailService.swift in Sources */,
 				CB774FC92199271000EC1357 /* CityListService.swift in Sources */,
 				CB774FCB2199271000EC1357 /* AreaInfoService.swift in Sources */,
-				CB2D3A9A2199251100BC71C2 /* ViewController.swift in Sources */,
 				CB774FC62199271000EC1357 /* NetworkResult.swift in Sources */,
 				CB774FD92199272500EC1357 /* InfoDetailCell.swift in Sources */,
 				CB774FBB2199270700EC1357 /* AreaDetailData.swift in Sources */,
 				CB774FC72199271000EC1357 /* APIService.swift in Sources */,
 				CB774FB02199262400EC1357 /* InfoDetailVC.swift in Sources */,
 				CB774FBC2199270700EC1357 /* AreaInfoData.swift in Sources */,
+				CB774FDC219981E800EC1357 /* UIImageView+imageFromUrl.swift in Sources */,
 				CB2D3A982199251100BC71C2 /* AppDelegate.swift in Sources */,
 				CB774FD52199272500EC1357 /* ForcastCell.swift in Sources */,
 				CB774FB12199262400EC1357 /* DetailVC.swift in Sources */,
@@ -358,14 +362,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CB2D3A9B2199251100BC71C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB2D3A9C2199251100BC71C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CB2D3AA02199251200BC71C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

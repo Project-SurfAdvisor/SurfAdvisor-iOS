@@ -5,7 +5,6 @@
 //  Created by 박세은 on 2018. 10. 23..
 //  Copyright © 2018년 박세은. All rights reserved.
 //
-
 import Foundation
 import Alamofire
 import SwiftyJSON

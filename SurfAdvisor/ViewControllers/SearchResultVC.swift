@@ -12,6 +12,8 @@ class SearchResultVC: UIViewController {
     var places = [Place]() {
         didSet {
             self.resultTbV.reloadData()
+//            print(date)
+//            print(location)
         }
     }
     var date = ""
@@ -20,12 +22,26 @@ class SearchResultVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(date)
+        print(location)
         setupView()
+        initData()
     }
     
-    func setupView() {
+    private func setupView() {
         resultTbV.delegate = self
         resultTbV.dataSource = self
+    }
+    
+    private func initData() {
+        print("ddfdfdfdf")
+        SearchResultService.shareInstance.getGradeSearchResult(date: self.date, location: self.location, completion: { (places) in
+            
+            print("dddd")
+            self.places = places
+        }) { (err) in
+            print("검색 결과 실패")
+        }
     }
     
     @IBAction func selectOptionAction(_ sender: UISegmentedControl) {
@@ -37,7 +53,6 @@ class SearchResultVC: UIViewController {
             }) { (err) in
                 print("검색 결과 실패")
             }
-
         } else {
             SearchResultService.shareInstance.getDistanceSearchResult(date: self.date, location: location, completion: { (places) in
                 
@@ -61,6 +76,7 @@ extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
         

@@ -7,23 +7,56 @@
 //
 
 import UIKit
-
 class DetailVC: UIViewController {
     @IBOutlet weak var areaNameLabel: UILabel!
     @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var forcastView: UIView!
     @IBOutlet weak var surfShopCV: UICollectionView!
+    @IBOutlet weak var restaurantCV: UICollectionView!
+    @IBOutlet weak var hotelCV: UICollectionView!
     @IBOutlet weak var forcastTbV: UITableView!
+    
+    var area: Area? {
+        didSet{
+            self.forcastTbV.reloadData()
+        }
+    }
+    var areaInfo: Info? {
+        didSet{
+            self.surfShopCV.reloadData()
+            self.restaurantCV.reloadData()
+            self.hotelCV.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        initData()
         infoView.isHidden = true
+    }
+    
+    private func initData() {
+        AreaDetailService.shareInstance.getAreaDetail(date: "2018.11.15", id: 1, completion: { (area) in
+            self.area = area
+        }) { (err) in
+            print("detail 에러")
+        }
+        
+        AreaInfoService.shareInstance.getAreaInfo(id: 1, completion: { (info) in
+            self.areaInfo = info
+        }) { (err) in
+            print("info 에러")
+        }
     }
     
     private func setupView() {
         surfShopCV.delegate = self
         surfShopCV.dataSource = self
+        restaurantCV.delegate = self
+        restaurantCV.dataSource = self
+        hotelCV.delegate = self
+        hotelCV.dataSource = self
         
         forcastTbV.delegate = self
         forcastTbV.dataSource = self
@@ -33,11 +66,11 @@ class DetailVC: UIViewController {
         forcastView.isHidden = false
         infoView.isHidden = true
     }
+    
     @IBAction func infoAction(_ sender: UIButton) {
         forcastView.isHidden = true
         infoView.isHidden = false
     }
-    
 }
 
 extension DetailVC: UITableViewDelegate, UITableViewDataSource {
@@ -49,24 +82,46 @@ extension DetailVC: UITableViewDelegate, UITableViewDataSource {
         let cell = forcastTbV.dequeueReusableCell(withIdentifier: "ForcastCell") as! ForcastCell
         return cell
     }
-    
 }
 
 extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let info = areaInfo else {return 0}
         
-        return 3
+        if collectionView == surfShopCV {
+            print(info.surfShopList.count)
+            return info.surfShopList.count < 3 ? info.surfShopList.count : 3
+        } else if collectionView == restaurantCV {
+            print(info.restaurantList.count)
+            return info.restaurantList.count < 3 ? info.restaurantList.count : 3
+        } else {
+            print(info.hotelList.count)
+            return info.hotelList.count < 3 ? info.hotelList.count : 3
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-//        if collectionView == surfShopCV {
-//
-//        }
-        
-        let cell = surfShopCV.dequeueReusableCell(withReuseIdentifier: "SurfShopCell", for: indexPath) as! SurfShopCell
-        
-        return cell
+        if collectionView == surfShopCV {
+            let surfShop = areaInfo!.surfShopList[indexPath.item]
+            let cell = surfShopCV.dequeueReusableCell(withReuseIdentifier: "SurfShopCell", for: indexPath) as! SurfShopCell
+            cell.nameLabel.text = surfShop.ssName
+            cell.imageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "")
+            return cell
+            
+        } else if collectionView == restaurantCV {
+            let restaurant = areaInfo!.restaurantList[indexPath.item]
+            let cell = restaurantCV.dequeueReusableCell(withReuseIdentifier: "RestaurantCell", for: indexPath) as! SurfShopCell
+            cell.nameLabel.text = restaurant.rName
+            cell.imageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "")
+            return cell
+            
+        } else  {
+            let hotel = areaInfo!.hotelList[indexPath.item]
+            let cell = hotelCV.dequeueReusableCell(withReuseIdentifier: "HotelCell", for: indexPath) as! SurfShopCell
+            cell.nameLabel.text = hotel.hName
+            cell.imageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "")
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

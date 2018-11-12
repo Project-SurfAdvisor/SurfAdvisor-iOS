@@ -15,8 +15,8 @@ struct SearchResultService: APIService, RequestService{
     typealias NetworkData = SearchResultData
     
     func getGradeSearchResult(date: String, location: String, completion: @escaping ([Place]) -> Void, error: @escaping (Int) -> Void) {
-        let gradeURL = URL + "/gradeList?si_date=\(date)&c_name=\(location)"
-        
+        var gradeURL = URL + "/gradeList?si_date=\(date)&c_name=\(location)"
+        gradeURL = gradeURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         gettable(gradeURL, body: nil, header: nil) { res in
             switch res {
             case .success(let SearchResultData):
@@ -32,8 +32,8 @@ struct SearchResultService: APIService, RequestService{
     
     
     func getDistanceSearchResult(date: String, location: String, completion: @escaping ([Place]) -> Void, error: @escaping (Int) -> Void) {
-        let distanceURL =  URL + "/distanceList?si_date=\(date)&c_name=\(location)"
-        
+        var distanceURL =  URL + "/distanceList?si_date=\(date)&c_name=\(location)"
+        distanceURL = distanceURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         gettable(distanceURL, body: nil, header: nil) { res in
             switch res {
             case .success(let SearchResultData):

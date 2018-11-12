@@ -16,15 +16,15 @@ struct AreaDetailData: Codable {
 
 struct Area: Codable {
     let saName: String
-    let siGrade, siWeatherImage, siTemperature, siWave: Int
-    let siWind: Int
+    let siGrade: Double
+    let siTemperature, siMaxTemperature, siWave, siWind: Int
     let forcast: [Forcast]
     
     enum CodingKeys: String, CodingKey {
         case saName = "sa_name"
         case siGrade = "si_grade"
-        case siWeatherImage = "si_weatherImage"
         case siTemperature = "si_temperature"
+        case siMaxTemperature = "si_maxTemperature"
         case siWave = "si_wave"
         case siWind = "si_wind"
         case forcast
