@@ -9,19 +9,14 @@
 import UIKit
 
 class RestaurantCell: UITableViewCell {
-/*
-     "r_photo": "",
-     "r_name": "골든회타운",
-     "r_explain1": "생선회",
-     "r_explain2": "-",
-     "r_time": "-",
-     "r_address": "충남 태안군 소원면 만리포2길 156",
-     "r_longitude": 126.144276,
-     "r_latitude": 36.787076,
-     "r_phoneNumber": "-",
-     "distance": 183,
-     "distanceUnit": "m"
- */
+
+    @IBOutlet weak var infoImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var introductionLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    var phoneNum: String?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

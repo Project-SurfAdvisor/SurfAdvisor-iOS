@@ -732,13 +732,6 @@
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="www.surfholic.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INA-Eb-hk4">
-                                                            <rect key="frame" x="96" y="218" width="131" height="18"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="보드/슈트 렌탈 가능, 서핑 전문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A46-er-pXE">
                                                             <rect key="frame" x="8" y="249" width="181" height="18"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -811,19 +804,18 @@
                                             <outlet property="infoImageView" destination="GPI-PQ-GBi" id="rA7-J0-tVs"/>
                                             <outlet property="introductionLabel" destination="A46-er-pXE" id="NwK-Az-Rft"/>
                                             <outlet property="nameLabel" destination="Z31-oy-4Nu" id="vJv-KB-Wl3"/>
-                                            <outlet property="siteLabel" destination="INA-Eb-hk4" id="VkU-Y6-sEx"/>
                                             <outlet property="timeLabel" destination="YcA-Tp-fu3" id="KIr-Qe-r82"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HotelInfoCell" rowHeight="370" id="RPZ-0r-4y2" userLabel="HotelInfoCell" customClass="HotelCell" customModule="SurfAdvisor" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="768" width="375" height="370"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HotelInfoCell" rowHeight="320" id="RPZ-0r-4y2" userLabel="HotelInfoCell" customClass="HotelCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="768" width="375" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RPZ-0r-4y2" id="GmA-Hl-MMg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="369.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="319.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-xK-kCg">
-                                                    <rect key="frame" x="8" y="21" width="345" height="331"/>
+                                                    <rect key="frame" x="15" y="21" width="345" height="282"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JBh-Db-Kyc">
                                                             <rect key="frame" x="8" y="8" width="329" height="197"/>
@@ -836,50 +828,22 @@
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="www.surfholic.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kd-eW-IJz">
-                                                            <rect key="frame" x="96" y="218" width="131" height="18"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="보드/슈트 렌탈 가능, 서핑 전문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoK-aO-oIv">
-                                                            <rect key="frame" x="8" y="249" width="181" height="18"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="운영 시간 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lny-0N-QM8">
-                                                            <rect key="frame" x="8" y="270" width="69" height="18"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AM 8:00 ~ PM 5:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzc-vj-C57">
-                                                            <rect key="frame" x="76" y="270" width="135" height="18"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="부산광역시 해운대구 송정동 12-3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlU-R9-z7Z">
-                                                            <rect key="frame" x="8" y="293" width="200" height="18"/>
+                                                            <rect key="frame" x="8" y="244" width="200" height="18"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9B2-Lu-yGT">
-                                                            <rect key="frame" x="247" y="274" width="30" height="30"/>
+                                                            <rect key="frame" x="249" y="232" width="30" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" title="지도">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmW-XE-AAO">
-                                                            <rect key="frame" x="286" y="274" width="30" height="30"/>
+                                                            <rect key="frame" x="288" y="232" width="30" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" title="전화">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -891,21 +855,16 @@
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="0.35902718319999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="345" id="bAu-yj-YXg"/>
-                                                        <constraint firstAttribute="height" constant="331" id="dHe-kl-cch"/>
-                                                        <constraint firstAttribute="height" constant="331" id="ieK-V6-L0C"/>
+                                                        <constraint firstAttribute="width" constant="345" id="r2l-lC-geV"/>
+                                                        <constraint firstAttribute="height" constant="282" id="v9E-rz-zbL"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Nk8-xK-kCg" firstAttribute="top" secondItem="GmA-Hl-MMg" secondAttribute="topMargin" constant="13" id="0MD-ed-hTB"/>
-                                                <constraint firstItem="Nk8-xK-kCg" firstAttribute="leading" secondItem="GmA-Hl-MMg" secondAttribute="leadingMargin" id="1aW-Mw-qrQ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Nk8-xK-kCg" secondAttribute="bottom" constant="4" id="PTt-JP-rhO"/>
-                                                <constraint firstItem="Nk8-xK-kCg" firstAttribute="trailing" secondItem="GmA-Hl-MMg" secondAttribute="trailingMargin" id="QEM-Mt-LGM"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Nk8-xK-kCg" secondAttribute="bottom" constant="4" id="U84-J2-odT"/>
-                                                <constraint firstItem="Nk8-xK-kCg" firstAttribute="trailing" secondItem="GmA-Hl-MMg" secondAttribute="trailingMargin" id="bDs-O4-JJt"/>
-                                                <constraint firstItem="Nk8-xK-kCg" firstAttribute="leading" secondItem="GmA-Hl-MMg" secondAttribute="leadingMargin" id="qhv-SZ-UaV"/>
-                                                <constraint firstItem="Nk8-xK-kCg" firstAttribute="top" secondItem="GmA-Hl-MMg" secondAttribute="topMargin" constant="13" id="tYq-oY-6GI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Nk8-xK-kCg" secondAttribute="bottom" constant="8.5" id="17p-gD-cmQ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Nk8-xK-kCg" secondAttribute="trailing" constant="7" id="NI5-ME-1hG"/>
+                                                <constraint firstItem="Nk8-xK-kCg" firstAttribute="top" secondItem="GmA-Hl-MMg" secondAttribute="topMargin" constant="13" id="Vf8-dj-RNd"/>
+                                                <constraint firstItem="Nk8-xK-kCg" firstAttribute="leading" secondItem="GmA-Hl-MMg" secondAttribute="leadingMargin" constant="7" id="uk6-8n-D2c"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -913,10 +872,7 @@
                                         <connections>
                                             <outlet property="addressLabel" destination="nlU-R9-z7Z" id="Wv7-ZL-Mrg"/>
                                             <outlet property="infoImageView" destination="JBh-Db-Kyc" id="rFr-5l-A5O"/>
-                                            <outlet property="introductionLabel" destination="CoK-aO-oIv" id="BFX-dK-aAZ"/>
                                             <outlet property="nameLabel" destination="Fjn-kA-0UO" id="9yl-yP-Ek2"/>
-                                            <outlet property="siteLabel" destination="9kd-eW-IJz" id="466-Vq-1gJ"/>
-                                            <outlet property="timeLabel" destination="pzc-vj-C57" id="hYu-fc-1bm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

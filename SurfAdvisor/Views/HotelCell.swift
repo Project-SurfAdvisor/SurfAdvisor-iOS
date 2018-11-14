@@ -9,6 +9,10 @@
 import UIKit
 
 class HotelCell: UITableViewCell {
+    @IBOutlet weak var infoImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    var phoneNum: String?
 
     override func awakeFromNib() {
         super.awakeFromNib()
