@@ -15,6 +15,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var dateView: UIView!
     @IBOutlet weak var locationView: UIView!
     
+    var dateObj = Date()
     var datePicker = UIDatePicker()
     var date = ""  {
         didSet {
@@ -76,6 +77,7 @@ class MainVC: UIViewController {
         let dateFommatter = DateFormatter()
         dateFommatter.dateFormat = "yyyy.MM.dd"
         date = dateFommatter.string(from: datePicker.date)
+        self.dateObj = datePicker.date
         view.endEditing(true)
     }
     
@@ -99,7 +101,7 @@ class MainVC: UIViewController {
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SearchResultVC") as! SearchResultVC
                 vc.location = self.location
                 vc.date = self.date
-                
+                vc.dateObj = self.dateObj
                 self.navigationController?.pushViewController(vc, animated: true)
             }
             alertController.addAction(cancelAction)

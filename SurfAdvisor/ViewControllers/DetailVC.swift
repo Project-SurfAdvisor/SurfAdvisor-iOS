@@ -15,11 +15,10 @@ class DetailVC: UIViewController {
     @IBOutlet weak var restaurantCV: UICollectionView!
     @IBOutlet weak var hotelCV: UICollectionView!
     @IBOutlet weak var forcastTbV: UITableView!
-    var areaName: String = "" {
-        didSet {
-            self.areaNameLabel.text = areaName
-        }
-    }
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    var dateObj = Date()
+    var areaName: String = ""
     var areaId = 0
     var date = ""
     var area: Area? {
@@ -40,11 +39,12 @@ class DetailVC: UIViewController {
         super.viewDidLoad()
         setupView()
         initData()
-        
+        setupDate()
         print(areaId)
     }
     
     private func initData() {
+        self.areaNameLabel.text = areaName
         AreaDetailService.shareInstance.getAreaDetail(date: self.date, id: self.areaId, completion: { (area) in
             self.area = area
         }) { (err) in
@@ -57,6 +57,13 @@ class DetailVC: UIViewController {
             print("info 에러")
         }
     }
+    
+    private func setupDate() {
+        let dateFommatter = DateFormatter()
+        dateFommatter.dateFormat = "yyyy . MM . dd"
+        self.dateLabel.text = dateFommatter.string(from: self.dateObj)
+    }
+    
     
     private func setupView() {
         infoView.isHidden = true

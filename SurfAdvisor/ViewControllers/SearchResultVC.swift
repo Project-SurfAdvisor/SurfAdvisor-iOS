@@ -16,6 +16,8 @@ class SearchResultVC: UIViewController {
 //            print(location)
         }
     }
+    
+    var dateObj = Date()
     var date = ""
     var location = ""
     @IBOutlet weak var resultTbV: UITableView!
@@ -82,6 +84,7 @@ extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
         vc.areaId = self.places[indexPath.row].saID
         vc.date = self.date
         vc.areaName = self.places[indexPath.row].saName
+        vc.dateObj = self.dateObj
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

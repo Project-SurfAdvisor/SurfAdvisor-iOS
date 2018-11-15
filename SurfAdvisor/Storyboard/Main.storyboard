@@ -550,14 +550,14 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Jo-ek-gSK">
-                                        <rect key="frame" x="0.0" y="284" width="375" height="231"/>
+                                        <rect key="frame" x="0.0" y="288" width="375" height="227"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableHeaderView" contentMode="scaleToFill" id="XdB-eq-TF1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="nD6-bD-Rzv">
-                                                    <rect key="frame" x="40.5" y="14.5" width="294" height="15.5"/>
+                                                    <rect key="frame" x="40.5" y="11.5" width="294" height="15.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKb-Gb-nna">
                                                             <rect key="frame" x="0.0" y="0.0" width="31" height="15.5"/>
@@ -594,7 +594,7 @@
                                         </view>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForcastCell" id="2Ay-G0-SBq" customClass="ForcastCell" customModule="SurfAdvisor" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                                <rect key="frame" x="0.0" y="66" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Ay-G0-SBq" id="Jj5-dg-DVA">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -623,14 +623,14 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe9-El-ALJ">
-                                        <rect key="frame" x="0.0" y="283" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="287" width="375" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="0.44667701199999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="yhU-Jp-Axc"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018 . 10 . 10 TUE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cn-NP-GB5">
-                                        <rect key="frame" x="131" y="263.5" width="113.5" height="14.5"/>
+                                        <rect key="frame" x="131" y="265.5" width="113.5" height="14.5"/>
                                         <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="13"/>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -638,7 +638,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="4ND-QX-oXt" firstAttribute="centerX" secondItem="q8a-WW-U96" secondAttribute="centerX" id="0Qx-NN-yOF"/>
-                                    <constraint firstItem="5cn-NP-GB5" firstAttribute="top" secondItem="GC2-Ox-34u" secondAttribute="bottom" constant="5" id="1D4-8e-sQE"/>
+                                    <constraint firstItem="5cn-NP-GB5" firstAttribute="top" secondItem="GC2-Ox-34u" secondAttribute="bottom" constant="7" id="1D4-8e-sQE"/>
                                     <constraint firstItem="Qe9-El-ALJ" firstAttribute="leading" secondItem="q8a-WW-U96" secondAttribute="leading" id="1kS-m0-Oh9"/>
                                     <constraint firstAttribute="trailing" secondItem="0Jo-ek-gSK" secondAttribute="trailing" id="3fV-ap-TyE"/>
                                     <constraint firstItem="GC2-Ox-34u" firstAttribute="top" secondItem="1R9-O4-R9D" secondAttribute="bottom" constant="15" id="AH9-ds-jZ4"/>
@@ -651,7 +651,7 @@
                                     <constraint firstItem="7ad-3r-7iH" firstAttribute="centerX" secondItem="q8a-WW-U96" secondAttribute="centerX" id="Yho-zh-LUo"/>
                                     <constraint firstItem="4ND-QX-oXt" firstAttribute="height" secondItem="q8a-WW-U96" secondAttribute="height" multiplier="70:515" id="cTx-39-EmV"/>
                                     <constraint firstItem="7ad-3r-7iH" firstAttribute="height" secondItem="4ND-QX-oXt" secondAttribute="height" id="d6e-iH-Dug"/>
-                                    <constraint firstItem="Qe9-El-ALJ" firstAttribute="top" secondItem="5cn-NP-GB5" secondAttribute="bottom" constant="5" id="dOT-eS-sm9"/>
+                                    <constraint firstItem="Qe9-El-ALJ" firstAttribute="top" secondItem="5cn-NP-GB5" secondAttribute="bottom" constant="7" id="dOT-eS-sm9"/>
                                     <constraint firstAttribute="bottom" secondItem="0Jo-ek-gSK" secondAttribute="bottom" id="gP6-D1-GCY"/>
                                     <constraint firstItem="GC2-Ox-34u" firstAttribute="leading" secondItem="q8a-WW-U96" secondAttribute="leading" id="gTX-xs-0R2"/>
                                     <constraint firstItem="QBK-o5-n7h" firstAttribute="top" secondItem="GL2-P7-2VH" secondAttribute="bottom" constant="5" id="i5S-2D-KRb"/>
@@ -702,6 +702,7 @@
                     </view>
                     <connections>
                         <outlet property="areaNameLabel" destination="IAq-uB-ake" id="PIP-e1-OKX"/>
+                        <outlet property="dateLabel" destination="5cn-NP-GB5" id="GO6-0G-PEz"/>
                         <outlet property="forcastTbV" destination="0Jo-ek-gSK" id="Xkh-bv-mtp"/>
                         <outlet property="forcastView" destination="q8a-WW-U96" id="rWC-zH-VYM"/>
                         <outlet property="hotelCV" destination="455-Ek-MVn" id="ZSb-7h-0gW"/>
