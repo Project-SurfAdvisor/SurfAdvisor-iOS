@@ -15,6 +15,7 @@ class RestaurantCell: UITableViewCell {
     @IBOutlet weak var introductionLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var squareView: UIView!
     var phoneNum: String?
 
     override func awakeFromNib() {

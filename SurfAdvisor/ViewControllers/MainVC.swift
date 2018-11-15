@@ -11,6 +11,10 @@ import UIKit
 class MainVC: UIViewController {
     @IBOutlet weak var dateTxf: UITextField!
     @IBOutlet weak var locationTxf: UITextField!
+    @IBOutlet weak var searchBtn: UIButton!
+    @IBOutlet weak var dateView: UIView!
+    @IBOutlet weak var locationView: UIView!
+    
     var datePicker = UIDatePicker()
     var date = ""  {
         didSet {
@@ -28,9 +32,9 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         setupPickerView()
         setupDate()
+        setupView()
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(setLocation(noti:)), name: NSNotification.Name("setLocation"), object: nil)
-        
         
 //        let gest = UIGestureRecognizer(target: self, action: #selector(touchView(gest:)))
 //        self.view.addGestureRecognizer(gest)
@@ -39,6 +43,13 @@ class MainVC: UIViewController {
 //    @objc func touchView(gest: UIGestureRecognizer) {
 //        self.view.endEditing(true)
 //    }
+    
+    private func setupView(){
+        dateView.applyRadius(radius: 2)
+        locationView.applyRadius(radius: 2)
+        searchBtn.applyRadius(radius: 4)
+        
+    }
     
     @objc func setLocation(noti: Notification) {
         guard let loc = noti.object as? String else {return}

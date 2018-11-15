@@ -78,7 +78,8 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.timeLabel.text = surfShop.ssTime
             cell.infoImageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "")
             cell.phoneNum = surfShop.ssPhoneNumber
-            
+            cell.squareView.applyRadius(radius: 7)
+            cell.infoImageView.applyRadius(radius: 7)
             return cell
         } else if category == 2 {
             let cell = infoTbV.dequeueReusableCell(withIdentifier: "RestaurantInfoCell") as! RestaurantCell
@@ -89,7 +90,8 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.timeLabel.text = restaurant.rTime
             cell.infoImageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "")
             cell.phoneNum = restaurant.rPhoneNumber
-            
+            cell.infoImageView.applyRadius(radius: 7)
+            cell.squareView.applyRadius(radius: 7)
             return cell
         } else {
             let cell = infoTbV.dequeueReusableCell(withIdentifier: "HotelInfoCell") as! HotelCell
@@ -98,7 +100,8 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.addressLabel.text = hotel.hAddress
             cell.infoImageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "")
             cell.phoneNum = hotel.hPhoneNumber
-            
+            cell.infoImageView.applyRadius(radius: 7)
+            cell.squareView.applyRadius(radius: 7)
             return cell
         }
         

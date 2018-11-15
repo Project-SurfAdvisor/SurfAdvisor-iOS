@@ -68,7 +68,7 @@ struct SurfShopList: Codable {
     let ssIntroduction, ssTime, ssAddress: String
     let ssLongitude, ssLatitude: Double
     let ssPhoneNumber: String
-    let distance: Int
+    let distance: Double
     let distanceUnit: String
     
     enum CodingKeys: String, CodingKey {

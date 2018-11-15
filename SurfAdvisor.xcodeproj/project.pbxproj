@@ -38,6 +38,9 @@
 		CB774FDC219981E800EC1357 /* UIImageView+imageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */; };
 		CB774FDE2199C1C100EC1357 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FDD2199C1C100EC1357 /* RestaurantCell.swift */; };
 		CB774FE02199C1CB00EC1357 /* HotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FDF2199C1CB00EC1357 /* HotelCell.swift */; };
+		CB946ED7219C58F40086D720 /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB946ED6219C58F40086D720 /* UIView+Design.swift */; };
+		CB946EDA219D27A50086D720 /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB946ED9219D27A10086D720 /* NanumGothic.otf */; };
+		CB946EDC219D32E40086D720 /* NanumGothicExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB946EDB219D32E00086D720 /* NanumGothicExtraBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+imageFromUrl.swift"; sourceTree = "<group>"; };
 		CB774FDD2199C1C100EC1357 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		CB774FDF2199C1CB00EC1357 /* HotelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCell.swift; sourceTree = "<group>"; };
+		CB946ED6219C58F40086D720 /* UIView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
+		CB946ED9219D27A10086D720 /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
+		CB946EDB219D32E00086D720 /* NanumGothicExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 				CB774F84219925E000EC1357 /* ViewControllers */,
 				CB774F83219925D700EC1357 /* Views */,
 				CB774F82219925CF00EC1357 /* Storyboard */,
+				CB946ED8219D278D0086D720 /* Fonts */,
 				CB2D3A972199251100BC71C2 /* AppDelegate.swift */,
 				CB2D3A9E2199251200BC71C2 /* Assets.xcassets */,
 				CB2D3AA02199251200BC71C2 /* LaunchScreen.storyboard */,
@@ -190,8 +197,18 @@
 			isa = PBXGroup;
 			children = (
 				CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */,
+				CB946ED6219C58F40086D720 /* UIView+Design.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CB946ED8219D278D0086D720 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CB946EDB219D32E00086D720 /* NanumGothicExtraBold.otf */,
+				CB946ED9219D27A10086D720 /* NanumGothic.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		CC439D3C789D3414B317685B /* Pods */ = {
@@ -274,6 +291,8 @@
 				CB2D3AA22199251200BC71C2 /* LaunchScreen.storyboard in Resources */,
 				CB2D3A9F2199251200BC71C2 /* Assets.xcassets in Resources */,
 				CB774FCF2199271A00EC1357 /* Main.storyboard in Resources */,
+				CB946EDC219D32E40086D720 /* NanumGothicExtraBold.otf in Resources */,
+				CB946EDA219D27A50086D720 /* NanumGothic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +380,7 @@
 				CB774FB12199262400EC1357 /* DetailVC.swift in Sources */,
 				CB774FD62199272500EC1357 /* SearchResultCell.swift in Sources */,
 				CB774FD72199272500EC1357 /* CityListCell.swift in Sources */,
+				CB946ED7219C58F40086D720 /* UIView+Design.swift in Sources */,
 				CB774FE02199C1CB00EC1357 /* HotelCell.swift in Sources */,
 				CB774FBA2199270700EC1357 /* CityListData.swift in Sources */,
 				CB774FD82199272500EC1357 /* SurfShopCell.swift in Sources */,

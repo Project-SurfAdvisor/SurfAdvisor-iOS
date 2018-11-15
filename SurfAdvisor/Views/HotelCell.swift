@@ -12,6 +12,7 @@ class HotelCell: UITableViewCell {
     @IBOutlet weak var infoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var squareView: UIView!
     var phoneNum: String?
 
     override func awakeFromNib() {

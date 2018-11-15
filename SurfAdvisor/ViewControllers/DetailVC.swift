@@ -15,7 +15,11 @@ class DetailVC: UIViewController {
     @IBOutlet weak var restaurantCV: UICollectionView!
     @IBOutlet weak var hotelCV: UICollectionView!
     @IBOutlet weak var forcastTbV: UITableView!
-    
+    var areaName: String = "" {
+        didSet {
+            self.areaNameLabel.text = areaName
+        }
+    }
     var areaId = 0
     var date = ""
     var area: Area? {
@@ -36,7 +40,8 @@ class DetailVC: UIViewController {
         super.viewDidLoad()
         setupView()
         initData()
-        infoView.isHidden = true
+        
+        print(areaId)
     }
     
     private func initData() {
@@ -54,6 +59,7 @@ class DetailVC: UIViewController {
     }
     
     private func setupView() {
+        infoView.isHidden = true
         surfShopCV.delegate = self
         surfShopCV.dataSource = self
         restaurantCV.delegate = self
@@ -116,6 +122,7 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
             let cell = surfShopCV.dequeueReusableCell(withReuseIdentifier: "SurfShopCell", for: indexPath) as! SurfShopCell
             cell.nameLabel.text = surfShop.ssName
             cell.imageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "")
+            cell.imageView.applyRadius(radius: 6)
             return cell
             
         } else if collectionView == restaurantCV {
@@ -123,6 +130,7 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
             let cell = restaurantCV.dequeueReusableCell(withReuseIdentifier: "RestaurantCell", for: indexPath) as! SurfShopCell
             cell.nameLabel.text = restaurant.rName
             cell.imageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "")
+            cell.imageView.applyRadius(radius: 6)
             return cell
             
         } else  {
@@ -130,6 +138,7 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
             let cell = hotelCV.dequeueReusableCell(withReuseIdentifier: "HotelCell", for: indexPath) as! SurfShopCell
             cell.nameLabel.text = hotel.hName
             cell.imageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "")
+            cell.imageView.applyRadius(radius: 6)
             return cell
         }
     }
