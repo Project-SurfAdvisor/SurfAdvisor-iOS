@@ -94,6 +94,7 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.squareView.applyRadius(radius: 7)
             return cell
         } else {
+            print(self.id)
             let cell = infoTbV.dequeueReusableCell(withIdentifier: "HotelInfoCell") as! HotelCell
             guard let hotel = self.areainfo?.hotelList[indexPath.row] else {return cell }
             cell.nameLabel.text = hotel.hName

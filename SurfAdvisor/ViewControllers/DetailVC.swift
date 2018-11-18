@@ -111,7 +111,7 @@ extension DetailVC: UITableViewDelegate, UITableViewDataSource {
         } else {
             cell.timeLbl.text = "\(forcast.sidTime) : 00"
         }
-        cell.gradeLbl.text = "\(gradeArr[forcast.sidGrade])"
+//        cell.gradeLbl.text = "\(gradeArr[forcast.sidGrade])"
         return cell
     }
 }
