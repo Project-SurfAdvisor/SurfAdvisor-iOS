@@ -16,10 +16,12 @@ class SearchResultVC: UIViewController {
 //            print(location)
         }
     }
-    
+   
+    let gradeArr = ["☆ ☆ ☆ ☆ ☆","★ ☆ ☆ ☆ ☆","★ ★ ☆ ☆ ☆", "★ ★ ★ ☆ ☆", "★ ★ ★ ★ ☆", "★ ★ ★ ★ ★"]
     var dateObj = Date()
     var date = ""
     var location = ""
+    var choose = 0
     @IBOutlet weak var resultTbV: UITableView!
     
     override func viewDidLoad() {
@@ -36,7 +38,6 @@ class SearchResultVC: UIViewController {
     }
     
     private func initData() {
-        print("ddfdfdfdf")
         SearchResultService.shareInstance.getGradeSearchResult(date: self.date, location: self.location, completion: { (places) in
             
             print("dddd")
@@ -47,9 +48,9 @@ class SearchResultVC: UIViewController {
     }
     
     @IBAction func selectOptionAction(_ sender: UISegmentedControl) {
+        self.choose = sender.selectedSegmentIndex
         if sender.selectedSegmentIndex == 0 {
             SearchResultService.shareInstance.getGradeSearchResult(date: self.date, location: location, completion: { (places) in
-                
                 self.places = places
                 
             }) { (err) in
@@ -57,7 +58,6 @@ class SearchResultVC: UIViewController {
             }
         } else {
             SearchResultService.shareInstance.getDistanceSearchResult(date: self.date, location: location, completion: { (places) in
-                
                 self.places = places
                 
             }) { (err) in
@@ -74,8 +74,14 @@ extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = resultTbV.dequeueReusableCell(withIdentifier: "SearchResultCell") as! SearchResultCell
-        cell.nameLabel.text = places[indexPath.row].saName
+        let place = places[indexPath.row]
         
+        cell.nameLabel.text = place.saName
+        if choose == 0{
+            cell.gradeLabel.text = gradeArr[Int(place.siGrade)]
+        } else {
+            cell.gradeLabel.text = "\(place.distance)Km"
+        }
         return cell
     }
     

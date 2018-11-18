@@ -16,7 +16,7 @@ class DetailVC: UIViewController {
     @IBOutlet weak var hotelCV: UICollectionView!
     @IBOutlet weak var forcastTbV: UITableView!
     @IBOutlet weak var dateLabel: UILabel!
-    
+    let gradeArr = ["☆ ☆ ☆", "★ ☆ ☆", "★ ★ ☆", "★ ★ ★"]
     var dateObj = Date()
     var areaName: String = ""
     var areaId = 0
@@ -98,11 +98,20 @@ class DetailVC: UIViewController {
 
 extension DetailVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = forcastTbV.dequeueReusableCell(withIdentifier: "ForcastCell") as! ForcastCell
+        guard let area = self.area else {return cell}
+        let forcast = area.forcast[indexPath.row]
+        
+        if forcast.sidTime < 10 {
+            cell.timeLbl.text = "0\(forcast.sidTime) : 00"
+        } else {
+            cell.timeLbl.text = "\(forcast.sidTime) : 00"
+        }
+        cell.gradeLbl.text = "\(gradeArr[forcast.sidGrade])"
         return cell
     }
 }
@@ -113,13 +122,13 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
         
         if collectionView == surfShopCV {
             print(info.surfShopList.count)
-            return info.surfShopList.count < 3 ? info.surfShopList.count : 3
+            return info.surfShopList.count < 6 ? info.surfShopList.count : 6
         } else if collectionView == restaurantCV {
             print(info.restaurantList.count)
-            return info.restaurantList.count < 3 ? info.restaurantList.count : 3
+            return info.restaurantList.count < 6 ? info.restaurantList.count : 6
         } else {
             print(info.hotelList.count)
-            return info.hotelList.count < 3 ? info.hotelList.count : 3
+            return info.hotelList.count < 6 ? info.hotelList.count : 6
         }
     }
     
@@ -148,5 +157,21 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
             cell.imageView.applyRadius(radius: 6)
             return cell
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "InfoDetailVC") as! InfoDetailVC
+       
+        vc.id = self.areaId
+        if collectionView == surfShopCV {
+             vc.category = 1
+        } else if collectionView == restaurantCV {
+             vc.category = 2
+        } else if collectionView == hotelCV {
+             vc.category = 3
+        }
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
