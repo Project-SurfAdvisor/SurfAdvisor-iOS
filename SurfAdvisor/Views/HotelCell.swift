@@ -13,10 +13,14 @@ class HotelCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var squareView: UIView!
-    var phoneNum: String?
-
+    @IBOutlet weak var callBtn: UIButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        squareView.applyRadius(radius: 7)
+        infoImageView.applyRadius(radius: 7)
         infoImageView.applyBorder(width: 1.0, color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
     }
 

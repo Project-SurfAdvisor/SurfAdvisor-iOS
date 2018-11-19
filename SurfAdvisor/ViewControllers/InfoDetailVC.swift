@@ -46,15 +46,21 @@ class InfoDetailVC: UIViewController {
             print("정보 출력 에러")
         }
     }
+    
+    @objc func callAction(btn: UIButton) {
+        guard let numberString = btn.titleLabel?.text,
+            let url = URL(string: "telprompt://\(numberString)") else {
+            return
+        }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
 }
 
 extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         guard let info = areainfo else {
             return 0
         }
-        
         if category == 1 {
             return info.surfShopList.count
         } else if category == 2 {
@@ -62,13 +68,9 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
         } else {
             return info.hotelList.count
         }
-        
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         if category == 1 {
-            
             let cell = infoTbV.dequeueReusableCell(withIdentifier: "SurfShopInfoCell") as! SurfShopInfoCell
             guard let surfShop = self.areainfo?.surfShopList[indexPath.row] else {return cell}
             cell.nameLabel.text = surfShop.ssName
@@ -77,9 +79,13 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.introductionLabel.text = surfShop.ssIntroduction
             cell.timeLabel.text = surfShop.ssTime
             cell.infoImageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "noImage")
-            cell.phoneNum = surfShop.ssPhoneNumber
-            cell.squareView.applyRadius(radius: 7)
-            cell.infoImageView.applyRadius(radius: 7)
+            if surfShop.ssPhoneNumber == "-" {
+                cell.callBtn.isHidden = true
+            } else {
+                cell.callBtn.setTitle(surfShop.ssPhoneNumber, for: .normal)
+                cell.callBtn.addTarget(self, action: #selector(callAction(btn:)), for: .touchUpInside)
+                
+            }
             return cell
         } else if category == 2 {
             let cell = infoTbV.dequeueReusableCell(withIdentifier: "RestaurantInfoCell") as! RestaurantCell
@@ -89,22 +95,26 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.introductionLabel.text = restaurant.rExplain1 + restaurant.rExplain2
             cell.timeLabel.text = restaurant.rTime
             cell.infoImageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "noImage")
-            cell.phoneNum = restaurant.rPhoneNumber
-            cell.infoImageView.applyRadius(radius: 7)
-            cell.squareView.applyRadius(radius: 7)
+            if restaurant.rPhoneNumber == "-" {
+                cell.callBtn.isHidden = true
+            } else {
+                cell.callBtn.setTitle(restaurant.rPhoneNumber, for: .normal)
+                cell.callBtn.addTarget(self, action: #selector(callAction(btn:)), for: .touchUpInside)
+            }
             return cell
         } else {
-            print(self.id)
             let cell = infoTbV.dequeueReusableCell(withIdentifier: "HotelInfoCell") as! HotelCell
             guard let hotel = self.areainfo?.hotelList[indexPath.row] else {return cell }
             cell.nameLabel.text = hotel.hName
             cell.addressLabel.text = hotel.hAddress
             cell.infoImageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "noImage")
-            cell.phoneNum = hotel.hPhoneNumber
-            cell.infoImageView.applyRadius(radius: 7)
-            cell.squareView.applyRadius(radius: 7)
+            if hotel.hPhoneNumber == "-" {
+                cell.callBtn.isHidden = true
+            } else {
+                cell.callBtn.setTitle(hotel.hPhoneNumber, for: .normal)
+                cell.callBtn.addTarget(self, action: #selector(callAction(btn:)), for: .touchUpInside)
+            }
             return cell
         }
-        
     }
 }
