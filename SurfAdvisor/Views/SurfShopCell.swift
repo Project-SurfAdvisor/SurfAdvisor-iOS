@@ -14,6 +14,7 @@ class SurfShopCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        imageView.applyBorder(width: 1.0, color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
     }
 
 }

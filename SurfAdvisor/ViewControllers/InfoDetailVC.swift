@@ -76,7 +76,7 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.siteLabel.text = surfShop.ssSite
             cell.introductionLabel.text = surfShop.ssIntroduction
             cell.timeLabel.text = surfShop.ssTime
-            cell.infoImageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "")
+            cell.infoImageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "noImage")
             cell.phoneNum = surfShop.ssPhoneNumber
             cell.squareView.applyRadius(radius: 7)
             cell.infoImageView.applyRadius(radius: 7)
@@ -88,7 +88,7 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.addressLabel.text = restaurant.rAddress
             cell.introductionLabel.text = restaurant.rExplain1 + restaurant.rExplain2
             cell.timeLabel.text = restaurant.rTime
-            cell.infoImageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "")
+            cell.infoImageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "noImage")
             cell.phoneNum = restaurant.rPhoneNumber
             cell.infoImageView.applyRadius(radius: 7)
             cell.squareView.applyRadius(radius: 7)
@@ -99,7 +99,7 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             guard let hotel = self.areainfo?.hotelList[indexPath.row] else {return cell }
             cell.nameLabel.text = hotel.hName
             cell.addressLabel.text = hotel.hAddress
-            cell.infoImageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "")
+            cell.infoImageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "noImage")
             cell.phoneNum = hotel.hPhoneNumber
             cell.infoImageView.applyRadius(radius: 7)
             cell.squareView.applyRadius(radius: 7)

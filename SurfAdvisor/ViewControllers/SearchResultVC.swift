@@ -87,9 +87,11 @@ extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
-        vc.areaId = self.places[indexPath.row].saID
+        let place = places[indexPath.row]
+        vc.areaId = place.saID
+        vc.areaName = place.saName
+        vc.grade = Int(place.siGrade)
         vc.date = self.date
-        vc.areaName = self.places[indexPath.row].saName
         vc.dateObj = self.dateObj
         self.navigationController?.pushViewController(vc, animated: true)
     }

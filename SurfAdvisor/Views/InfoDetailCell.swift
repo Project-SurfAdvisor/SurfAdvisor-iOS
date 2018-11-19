@@ -22,6 +22,7 @@ class SurfShopInfoCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        infoImageView.applyBorder(width: 1.0, color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
     }
 
     @IBAction func callAction(_ sender: UIButton) {

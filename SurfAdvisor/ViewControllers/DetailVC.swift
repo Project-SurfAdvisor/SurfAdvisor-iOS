@@ -16,7 +16,11 @@ class DetailVC: UIViewController {
     @IBOutlet weak var hotelCV: UICollectionView!
     @IBOutlet weak var forcastTbV: UITableView!
     @IBOutlet weak var dateLabel: UILabel!
-    let gradeArr = ["☆ ☆ ☆", "★ ☆ ☆", "★ ★ ☆", "★ ★ ★"]
+    @IBOutlet weak var infoTab: UIImageView!
+    @IBOutlet weak var forcastTab: UIImageView!
+    @IBOutlet weak var gradeLbl: UILabel!
+    var grade = 0
+    let gradeArr = ["☆", "★", "★★", "★★★", "★★★★", "★★★★★"]
     var dateObj = Date()
     var areaName: String = ""
     var areaId = 0
@@ -64,8 +68,9 @@ class DetailVC: UIViewController {
         self.dateLabel.text = dateFommatter.string(from: self.dateObj)
     }
     
-    
     private func setupView() {
+        gradeLbl.text = gradeArr[grade]
+        infoTab.isHidden = true
         infoView.isHidden = true
         surfShopCV.delegate = self
         surfShopCV.dataSource = self
@@ -79,11 +84,15 @@ class DetailVC: UIViewController {
     }
     
     @IBAction func forcastAction(_ sender: UIButton) {
+        forcastTab.isHidden = false
+        infoTab.isHidden = true
         forcastView.isHidden = false
         infoView.isHidden = true
     }
     
     @IBAction func infoAction(_ sender: UIButton) {
+        forcastTab.isHidden = true
+        infoTab.isHidden = false
         forcastView.isHidden = true
         infoView.isHidden = false
     }
@@ -137,7 +146,7 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
             let surfShop = areaInfo!.surfShopList[indexPath.item]
             let cell = surfShopCV.dequeueReusableCell(withReuseIdentifier: "SurfShopCell", for: indexPath) as! SurfShopCell
             cell.nameLabel.text = surfShop.ssName
-            cell.imageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "")
+            cell.imageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "noImage")
             cell.imageView.applyRadius(radius: 6)
             return cell
             
@@ -145,7 +154,7 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
             let restaurant = areaInfo!.restaurantList[indexPath.item]
             let cell = restaurantCV.dequeueReusableCell(withReuseIdentifier: "RestaurantCell", for: indexPath) as! SurfShopCell
             cell.nameLabel.text = restaurant.rName
-            cell.imageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "")
+            cell.imageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "noImage")
             cell.imageView.applyRadius(radius: 6)
             return cell
             
@@ -153,7 +162,7 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
             let hotel = areaInfo!.hotelList[indexPath.item]
             let cell = hotelCV.dequeueReusableCell(withReuseIdentifier: "HotelCell", for: indexPath) as! SurfShopCell
             cell.nameLabel.text = hotel.hName
-            cell.imageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "")
+            cell.imageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "noImage")
             cell.imageView.applyRadius(radius: 6)
             return cell
         }
