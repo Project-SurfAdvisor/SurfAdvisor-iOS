@@ -126,6 +126,7 @@ extension DetailVC: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
+   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let info = areaInfo else {return 0}
         

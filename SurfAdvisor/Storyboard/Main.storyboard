@@ -168,13 +168,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="송정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAq-uB-ake">
-                                <rect key="frame" x="163" y="45" width="49" height="29"/>
-                                <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="26"/>
+                                <rect key="frame" x="167" y="45" width="41.5" height="24.5"/>
+                                <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="22"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TP-Ci-g6f">
-                                <rect key="frame" x="0.0" y="187.5" width="375" height="479.5"/>
+                                <rect key="frame" x="0.0" y="166.5" width="375" height="500.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlf-rv-Yso">
                                         <rect key="frame" x="0.0" y="5" width="375" height="25"/>
@@ -207,30 +207,30 @@
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lSh-Ya-eMc">
-                                        <rect key="frame" x="8" y="38" width="359" height="85"/>
+                                        <rect key="frame" x="8" y="38" width="359" height="80"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="lSh-Ya-eMc" secondAttribute="height" multiplier="359:85" id="tZN-m8-rce"/>
+                                            <constraint firstAttribute="height" constant="80" id="FFq-LQ-NHv"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vcg-Q0-TZn">
-                                            <size key="itemSize" width="110" height="85"/>
+                                            <size key="itemSize" width="110" height="80"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SurfShopCell" id="tdG-ED-bSw" customClass="SurfShopCell" customModule="SurfAdvisor" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eMj-Iu-HFY">
-                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서프홀릭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r17-2F-h2H">
-                                                            <rect key="frame" x="57.5" y="59" width="45.5" height="14"/>
+                                                            <rect key="frame" x="57.5" y="64" width="45.5" height="14"/>
                                                             <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="12"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -238,12 +238,12 @@
                                                     </subviews>
                                                 </view>
                                                 <constraints>
-                                                    <constraint firstItem="eMj-Iu-HFY" firstAttribute="leading" secondItem="tdG-ED-bSw" secondAttribute="leading" id="4AV-u1-7w4"/>
+                                                    <constraint firstItem="eMj-Iu-HFY" firstAttribute="leading" secondItem="tdG-ED-bSw" secondAttribute="leading" id="141-jb-1tj"/>
+                                                    <constraint firstItem="eMj-Iu-HFY" firstAttribute="top" secondItem="tdG-ED-bSw" secondAttribute="top" id="7BJ-2C-6jB"/>
                                                     <constraint firstAttribute="trailing" secondItem="r17-2F-h2H" secondAttribute="trailing" constant="7" id="9ni-1w-3SQ"/>
-                                                    <constraint firstItem="eMj-Iu-HFY" firstAttribute="top" secondItem="tdG-ED-bSw" secondAttribute="top" id="CxJ-8a-ECf"/>
                                                     <constraint firstAttribute="bottom" secondItem="r17-2F-h2H" secondAttribute="bottom" constant="7" id="S3S-24-Mm0"/>
-                                                    <constraint firstAttribute="trailing" secondItem="eMj-Iu-HFY" secondAttribute="trailing" id="XsU-2t-STt"/>
-                                                    <constraint firstAttribute="bottom" secondItem="eMj-Iu-HFY" secondAttribute="bottom" id="wC7-gb-GcT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="eMj-Iu-HFY" secondAttribute="bottom" id="VJQ-KD-cKW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eMj-Iu-HFY" secondAttribute="trailing" id="qqt-Lq-ha5"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="imageView" destination="eMj-Iu-HFY" id="7ov-BQ-djd"/>
@@ -253,7 +253,7 @@
                                         </cells>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IRg-fc-qGp">
-                                        <rect key="frame" x="0.0" y="138" width="375" height="25"/>
+                                        <rect key="frame" x="0.0" y="133" width="375" height="25"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESTAURANT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2J-lM-dgE">
                                                 <rect key="frame" x="8" y="4.5" width="94" height="16.5"/>
@@ -283,30 +283,30 @@
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OI7-EX-zeG">
-                                        <rect key="frame" x="8" y="171" width="359" height="85"/>
+                                        <rect key="frame" x="8" y="166" width="359" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="OI7-EX-zeG" secondAttribute="height" multiplier="359:85" id="4RN-od-HkH"/>
+                                            <constraint firstAttribute="height" constant="80" id="7fq-ft-3K4"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hcu-hT-ncl">
-                                            <size key="itemSize" width="110" height="85"/>
+                                            <size key="itemSize" width="110" height="80"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestaurantCell" id="m3h-lx-fGy" customClass="SurfShopCell" customModule="SurfAdvisor" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2AM-xD-vYy">
-                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서프홀릭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ1-iJ-XMc">
-                                                            <rect key="frame" x="57.5" y="79" width="45.5" height="14"/>
+                                                            <rect key="frame" x="57.5" y="64" width="45.5" height="14"/>
                                                             <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="12"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -329,7 +329,7 @@
                                         </cells>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YzI-fL-WMH">
-                                        <rect key="frame" x="0.0" y="271" width="375" height="25"/>
+                                        <rect key="frame" x="0.0" y="261" width="375" height="25"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOTEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtK-Tq-66V">
                                                 <rect key="frame" x="8" y="4.5" width="47" height="16.5"/>
@@ -359,30 +359,30 @@
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="455-Ek-MVn">
-                                        <rect key="frame" x="8" y="304" width="359" height="85"/>
+                                        <rect key="frame" x="8" y="294" width="359" height="80"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="455-Ek-MVn" secondAttribute="height" multiplier="359:85" id="ovV-iO-Ht7"/>
+                                            <constraint firstAttribute="height" constant="80" id="Vwo-qe-bzu"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VWG-Zy-1cx">
-                                            <size key="itemSize" width="110" height="85"/>
+                                            <size key="itemSize" width="110" height="80"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelCell" id="6nf-A8-daX" customClass="SurfShopCell" customModule="SurfAdvisor" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="80"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DG4-8O-Xr1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="85"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서프홀릭" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7W-Ya-7jE">
-                                                            <rect key="frame" x="57.5" y="79" width="45.5" height="14"/>
+                                                            <rect key="frame" x="57.5" y="64" width="45.5" height="14"/>
                                                             <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="12"/>
                                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -405,21 +405,21 @@
                                         </cells>
                                     </collectionView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-5S-88a">
-                                        <rect key="frame" x="0.0" y="264" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="254" width="375" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="0.44667701199999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="M6A-2N-fq5"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rKx-CK-sQU">
-                                        <rect key="frame" x="0.0" y="397" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="382" width="375" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="0.44667701199999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Chv-av-o2b"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1t-0u-mtI">
-                                        <rect key="frame" x="0.0" y="131" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="126" width="375" height="1"/>
                                         <color key="backgroundColor" white="1" alpha="0.44667701199999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="en8-hD-PWt"/>
@@ -458,16 +458,16 @@
                                 </constraints>
                             </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="infoTap" translatesAutoresizingMaskIntoConstraints="NO" id="031-fg-My6">
-                                <rect key="frame" x="0.0" y="137.5" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="121.5" width="375" height="35"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="forcastTap" translatesAutoresizingMaskIntoConstraints="NO" id="tpU-6s-UBI">
-                                <rect key="frame" x="0.0" y="137.5" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="121.5" width="375" height="35"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LFi-1c-XV8">
-                                <rect key="frame" x="0.0" y="137.5" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="121.5" width="375" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4B-h0-c19">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="35"/>
                                         <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="13"/>
                                         <state key="normal" title="FORCAST">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -477,7 +477,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oh1-da-clJ">
-                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="40"/>
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="35"/>
                                         <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="13"/>
                                         <state key="normal" title="INFO">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -488,11 +488,11 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="LFi-1c-XV8" secondAttribute="height" multiplier="375:40" id="QQM-fN-H7u"/>
+                                    <constraint firstAttribute="width" secondItem="LFi-1c-XV8" secondAttribute="height" multiplier="375:35" id="QQM-fN-H7u"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8a-WW-U96">
-                                <rect key="frame" x="0.0" y="179.5" width="375" height="487.5"/>
+                                <rect key="frame" x="0.0" y="158.5" width="375" height="508.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-AY-jHf">
                                         <rect key="frame" x="15" y="15" width="345" height="137.5"/>
@@ -684,7 +684,7 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Jo-ek-gSK">
-                                        <rect key="frame" x="0.0" y="266" width="375" height="221.5"/>
+                                        <rect key="frame" x="0.0" y="266" width="375" height="242.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <view key="tableHeaderView" contentMode="scaleToFill" id="XdB-eq-TF1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
@@ -831,8 +831,8 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aen-Q8-JeK">
-                                <rect key="frame" x="139.5" y="80" width="96" height="37.5"/>
-                                <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="34"/>
+                                <rect key="frame" x="145" y="75.5" width="85" height="33"/>
+                                <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="30"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -850,7 +850,7 @@
                             <constraint firstItem="W5n-oC-13P" firstAttribute="trailing" secondItem="LFi-1c-XV8" secondAttribute="trailing" id="HNB-9V-tPJ"/>
                             <constraint firstItem="0TP-Ci-g6f" firstAttribute="bottom" secondItem="W5n-oC-13P" secondAttribute="bottom" id="IGu-5P-ixV"/>
                             <constraint firstItem="IAq-uB-ake" firstAttribute="centerX" secondItem="Zez-Y3-jLm" secondAttribute="centerX" id="Idm-Sc-uYp"/>
-                            <constraint firstItem="LFi-1c-XV8" firstAttribute="top" secondItem="Aen-Q8-JeK" secondAttribute="bottom" constant="20" id="Zeb-YE-AEW"/>
+                            <constraint firstItem="LFi-1c-XV8" firstAttribute="top" secondItem="Aen-Q8-JeK" secondAttribute="bottom" constant="13" id="Zeb-YE-AEW"/>
                             <constraint firstItem="tpU-6s-UBI" firstAttribute="centerX" secondItem="031-fg-My6" secondAttribute="centerX" id="gQy-sy-Mcc"/>
                             <constraint firstItem="q8a-WW-U96" firstAttribute="top" secondItem="LFi-1c-XV8" secondAttribute="bottom" constant="2" id="hKG-73-K8e"/>
                             <constraint firstItem="031-fg-My6" firstAttribute="height" secondItem="LFi-1c-XV8" secondAttribute="height" id="hVe-dd-zpb"/>
@@ -868,11 +868,6 @@
                             <constraint firstItem="tCS-vH-jdX" firstAttribute="leading" secondItem="W5n-oC-13P" secondAttribute="leading" id="zLw-Yr-iVs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W5n-oC-13P"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="q8a-WW-U96"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="areaNameLabel" destination="IAq-uB-ake" id="PIP-e1-OKX"/>
@@ -1354,13 +1349,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기사문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8l-qZ-GMU">
-                                                    <rect key="frame" x="35" y="12.5" width="48" height="19"/>
+                                                    <rect key="frame" x="15" y="12.5" width="48" height="19"/>
                                                     <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="17"/>
                                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★ ★ ★ ☆ ☆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adG-BF-r5r">
-                                                    <rect key="frame" x="241" y="12.5" width="99" height="19"/>
+                                                    <rect key="frame" x="261" y="12.5" width="99" height="19"/>
                                                     <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="17"/>
                                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1369,8 +1364,8 @@
                                             <constraints>
                                                 <constraint firstItem="adG-BF-r5r" firstAttribute="centerY" secondItem="P2s-oe-jdN" secondAttribute="centerY" id="IWp-fg-PqT"/>
                                                 <constraint firstItem="E8l-qZ-GMU" firstAttribute="centerY" secondItem="P2s-oe-jdN" secondAttribute="centerY" id="bZN-Cq-DTY"/>
-                                                <constraint firstItem="E8l-qZ-GMU" firstAttribute="leading" secondItem="P2s-oe-jdN" secondAttribute="leadingMargin" constant="20" id="mBM-HO-Gof"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="adG-BF-r5r" secondAttribute="trailing" constant="20" id="vW7-4x-7v6"/>
+                                                <constraint firstItem="E8l-qZ-GMU" firstAttribute="leading" secondItem="P2s-oe-jdN" secondAttribute="leadingMargin" id="mBM-HO-Gof"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="adG-BF-r5r" secondAttribute="trailing" id="vW7-4x-7v6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
