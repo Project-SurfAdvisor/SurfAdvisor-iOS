@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 struct AreaDetailData: Codable {
     let status: String
     let data: Area
@@ -16,28 +17,30 @@ struct AreaDetailData: Codable {
 
 struct Area: Codable {
     let saName: String
-    let siGrade: Double
-    let siTemperature, siMaxTemperature, siWave, siWind: Int
+    let siGradeStar: Double
+    let siWave, siWind, siRiding, siWear: Int
+    let siGradeComment: String
     let forcast: [Forcast]
     
     enum CodingKeys: String, CodingKey {
         case saName = "sa_name"
-        case siGrade = "si_grade"
-        case siTemperature = "si_temperature"
-        case siMaxTemperature = "si_maxTemperature"
+        case siGradeStar = "si_gradeStar"
         case siWave = "si_wave"
         case siWind = "si_wind"
+        case siRiding = "si_riding"
+        case siWear = "si_wear"
+        case siGradeComment = "si_gradeComment"
         case forcast
     }
 }
 
 struct Forcast: Codable {
-    let sidTime, sidWave, sidWind, sidGrade: Int
+    let sidTime: Int
+    let sidGradeStar,sidWave: Double
     
     enum CodingKeys: String, CodingKey {
         case sidTime = "sid_time"
         case sidWave = "sid_wave"
-        case sidWind = "sid_wind"
-        case sidGrade = "sid_grade"
+        case sidGradeStar = "sid_gradeStar"
     }
 }

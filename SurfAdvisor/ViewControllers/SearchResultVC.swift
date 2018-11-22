@@ -78,7 +78,7 @@ extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
         
         cell.nameLabel.text = place.saName
         if choose == 0{
-            cell.gradeLabel.text = gradeArr[Int(place.siGrade)]
+            cell.gradeLabel.text = gradeArr[Int(place.siGradeStar)]
         } else {
             cell.gradeLabel.text = "\(place.distance)Km"
         }
@@ -90,7 +90,7 @@ extension SearchResultVC: UITableViewDelegate, UITableViewDataSource {
         let place = places[indexPath.row]
         vc.areaId = place.saID
         vc.areaName = place.saName
-        vc.grade = Int(place.siGrade)
+        vc.grade = Int(place.siGradeStar)
         vc.date = self.date
         vc.dateObj = self.dateObj
         self.navigationController?.pushViewController(vc, animated: true)

@@ -10,6 +10,7 @@ import UIKit
 
 class InfoDetailVC: UIViewController {
 
+    @IBOutlet weak var categoryLbl: UILabel!
     @IBOutlet weak var infoTbV: UITableView!
     var areainfo: Info? {
         didSet {
@@ -27,12 +28,12 @@ class InfoDetailVC: UIViewController {
     
     private func setupView() {
         if category == 1 {
-            self.title = "Surf Shop"
+            self.categoryLbl.text = "Surf Shop"
         }
         else if category == 2 {
-            self.title = "Restaurant"
+            self.categoryLbl.text = "Restaurant"
         } else if category == 3 {
-            self.title = "Hotel"
+            self.categoryLbl.text = "Hotel"
         }
         
         self.infoTbV.delegate = self

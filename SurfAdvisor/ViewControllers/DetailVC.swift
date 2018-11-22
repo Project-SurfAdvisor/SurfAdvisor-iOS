@@ -7,20 +7,40 @@
 //
 
 import UIKit
+enum level {
+    
+}
 class DetailVC: UIViewController {
+    
     @IBOutlet weak var areaNameLabel: UILabel!
-    @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var gradeLbl: UILabel!
+    
+    @IBOutlet weak var infoTab: UIImageView!
+    @IBOutlet weak var forcastTab: UIImageView!
+    
+    // 지역 날씨
     @IBOutlet weak var forcastView: UIView!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var waveLbl: UILabel!
+    @IBOutlet weak var windLbl: UILabel!
+    @IBOutlet weak var ridingLbl: UILabel!
+    @IBOutlet weak var wearLbl: UILabel!
+    @IBOutlet weak var levelLbl: UILabel!
+    
+    // 지역 정보
+    @IBOutlet weak var infoView: UIView!
     @IBOutlet weak var surfShopCV: UICollectionView!
     @IBOutlet weak var restaurantCV: UICollectionView!
     @IBOutlet weak var hotelCV: UICollectionView!
     @IBOutlet weak var forcastTbV: UITableView!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var infoTab: UIImageView!
-    @IBOutlet weak var forcastTab: UIImageView!
-    @IBOutlet weak var gradeLbl: UILabel!
+    
     var grade = 0
-    let gradeArr = ["☆", "★", "★★", "★★★", "★★★★", "★★★★★"]
+    let grades = ["☆", "★", "★★", "★★★", "★★★★", "★★★★★"]
+    let waves = ["매우 낮은 파도" , "낮은 파도" , "보통 높이의 파도" , "높은 파도" , "매우 높은 파도"]
+    let winds = ["강한 온쇼어","보통 세기의 온쇼어","약한 온쇼어","사이드쇼어","약한 오프쇼어","보통 세기의 오프쇼어","강한 오프쇼어"]
+    let ridings = ["매우 짧은 라이딩","짧은 라이딩","보통길이의 라이딩","긴 라이딩","매우 긴 라이딩"]
+    let wears = ["7mm full suit","6mm full suit","5mm full suit","4mm full suit","3mm full suit","2mm spring suit","1mm jacket","lashguard"]
+    
     var dateObj = Date()
     var areaName: String = ""
     var areaId = 0
@@ -51,6 +71,17 @@ class DetailVC: UIViewController {
         self.areaNameLabel.text = areaName
         AreaDetailService.shareInstance.getAreaDetail(date: self.date, id: self.areaId, completion: { (area) in
             self.area = area
+            self.waveLbl.text = self.waves[area.siWave]
+            self.windLbl.text = self.winds[area.siWind]
+            self.ridingLbl.text = self.ridings[area.siRiding]
+            self.wearLbl.text = self.wears[area.siWear-2]
+            if area.siGradeComment == "초급자" {
+                self.levelLbl.text = "Beginner"
+            } else if area.siGradeComment == "중급자" {
+                self.levelLbl.text = "Intermediate"
+            } else {
+                self.levelLbl.text = "Experts"
+            }
         }) { (err) in
             print("detail 에러")
         }
@@ -69,7 +100,7 @@ class DetailVC: UIViewController {
     }
     
     private func setupView() {
-        gradeLbl.text = gradeArr[grade]
+        gradeLbl.text = grades[grade]
         infoTab.isHidden = true
         infoView.isHidden = true
         surfShopCV.delegate = self
@@ -120,7 +151,8 @@ extension DetailVC: UITableViewDelegate, UITableViewDataSource {
         } else {
             cell.timeLbl.text = "\(forcast.sidTime) : 00"
         }
-//        cell.gradeLbl.text = "\(gradeArr[forcast.sidGrade])"
+        cell.gradeLbl.text = "\(grades[Int(forcast.sidGradeStar)])"
+        cell.waveLbl.text = "\(forcast.sidWave)"
         return cell
     }
 }

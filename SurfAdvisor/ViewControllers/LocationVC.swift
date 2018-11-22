@@ -27,6 +27,7 @@ class LocationVC: UIViewController {
         setupView()
         initData()
     }
+   
     
     @objc func popAction(btn: UIButton) {
         self.navigationController?.popViewController(animated: true)

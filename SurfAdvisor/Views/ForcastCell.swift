@@ -11,6 +11,7 @@ import UIKit
 class ForcastCell: UITableViewCell {
 
     @IBOutlet weak var timeLbl: UILabel!
+    @IBOutlet weak var waveLbl: UILabel!
     @IBOutlet weak var gradeLbl: UILabel!
     
     override func awakeFromNib() {

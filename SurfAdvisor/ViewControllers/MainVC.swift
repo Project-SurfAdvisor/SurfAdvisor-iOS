@@ -39,8 +39,8 @@ class MainVC: UIViewController {
         
 //        let gest = UIGestureRecognizer(target: self, action: #selector(touchView(gest:)))
 //        self.view.addGestureRecognizer(gest)
+        
     }
-    
 //    @objc func touchView(gest: UIGestureRecognizer) {
 //        self.view.endEditing(true)
 //    }

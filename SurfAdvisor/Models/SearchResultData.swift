@@ -17,13 +17,13 @@ struct SearchResultData: Codable {
 struct Place: Codable {
     let saID: Int
     let saName: String
-    let siGrade, distance: Double
+    let siGradeStar, distance: Double
     let distanceUnit: String
     
     enum CodingKeys: String, CodingKey {
         case saID = "sa_id"
         case saName = "sa_name"
-        case siGrade = "si_grade"
+        case siGradeStar = "si_gradeStar"
         case distance, distanceUnit
     }
 }
