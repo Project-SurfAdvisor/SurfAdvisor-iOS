@@ -27,6 +27,10 @@ class InfoDetailVC: UIViewController {
     }
     
     private func setupView() {
+        let imv: UIImageView = UIImageView(image: #imageLiteral(resourceName: "surfAdvisorCopy"))
+        navigationItem.titleView = imv
+        self.navigationController?.navigationBar.topItem?.title = ""
+        
         if category == 1 {
             self.categoryLbl.text = "Surf Shop"
         }

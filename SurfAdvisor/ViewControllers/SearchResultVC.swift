@@ -35,6 +35,10 @@ class SearchResultVC: UIViewController {
     private func setupView() {
         resultTbV.delegate = self
         resultTbV.dataSource = self
+        let imv: UIImageView = UIImageView(image: #imageLiteral(resourceName: "surfAdvisorCopy"))
+        navigationItem.titleView = imv
+        self.navigationController?.navigationBar.topItem?.title = ""
+
     }
     
     private func initData() {

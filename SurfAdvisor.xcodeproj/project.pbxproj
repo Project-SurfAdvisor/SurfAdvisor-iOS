@@ -48,7 +48,7 @@
 		1B3571E7DAF1636B3778986E /* Pods-SurfAdvisor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.debug.xcconfig"; sourceTree = "<group>"; };
 		588CE5569ECE058CCFC72CE5 /* Pods_SurfAdvisor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SurfAdvisor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A7AAB89F5DAE323D74301F /* Pods-SurfAdvisor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SurfAdvisor.release.xcconfig"; path = "Pods/Target Support Files/Pods-SurfAdvisor/Pods-SurfAdvisor.release.xcconfig"; sourceTree = "<group>"; };
-		CB2D3A942199251100BC71C2 /* SurfAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB2D3A942199251100BC71C2 /* 서핑 어드바이저.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "서핑 어드바이저.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2D3A972199251100BC71C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB2D3A9E2199251200BC71C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB2D3AA12199251200BC71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		CB2D3A952199251100BC71C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB2D3A942199251100BC71C2 /* SurfAdvisor.app */,
+				CB2D3A942199251100BC71C2 /* 서핑 어드바이저.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 			);
 			name = SurfAdvisor;
 			productName = SurfAdvisor;
-			productReference = CB2D3A942199251100BC71C2 /* SurfAdvisor.app */;
+			productReference = CB2D3A942199251100BC71C2 /* 서핑 어드바이저.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -534,7 +534,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pkse1213.SurfAdvisor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "서핑 어드바이저";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -553,7 +553,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pkse1213.SurfAdvisor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "서핑 어드바이저";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -34,17 +34,10 @@ class LocationVC: UIViewController {
     }
     
     private func setupNaviBar(){
+        let imv: UIImageView = UIImageView(image: #imageLiteral(resourceName: "surfAdvisorCopy"))
+        navigationItem.titleView = imv
+        self.navigationController?.navigationBar.topItem?.title = ""
         
-        self.navigationItem.hidesBackButton = true
-        self.title = "Location"
-        
-        let btn = UIButton()
-        btn.setTitle("취소", for: .normal)
-        btn.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
-        btn.addTarget(self, action: #selector(popAction(btn:)), for: .touchUpInside)
-        let barbtn = UIBarButtonItem()
-        barbtn.customView = btn
-        self.navigationItem.rightBarButtonItem = barbtn
     }
     
     private func setupView(){

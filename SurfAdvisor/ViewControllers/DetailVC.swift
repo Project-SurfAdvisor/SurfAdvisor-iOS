@@ -37,7 +37,7 @@ class DetailVC: UIViewController {
     var grade = 0
     let grades = ["☆", "★", "★★", "★★★", "★★★★", "★★★★★"]
     let waves = ["매우 낮은 파도" , "낮은 파도" , "보통 높이의 파도" , "높은 파도" , "매우 높은 파도"]
-    let winds = ["강한 온쇼어","보통 세기의 온쇼어","약한 온쇼어","사이드쇼어","약한 오프쇼어","보통 세기의 오프쇼어","강한 오프쇼어"]
+    let winds = ["강한 온쇼어","보통 세기의 온쇼어","약한 온쇼어","사이드쇼어","약한 오프쇼어","보통 세기 오프쇼어","강한 오프쇼어"]
     let ridings = ["매우 짧은 라이딩","짧은 라이딩","보통길이의 라이딩","긴 라이딩","매우 긴 라이딩"]
     let wears = ["7mm full suit","6mm full suit","5mm full suit","4mm full suit","3mm full suit","2mm spring suit","1mm jacket","lashguard"]
     
@@ -100,13 +100,21 @@ class DetailVC: UIViewController {
     }
     
     private func setupView() {
+        let imv: UIImageView = UIImageView(image: #imageLiteral(resourceName: "surfAdvisorCopy"))
+        navigationItem.titleView = imv
+        self.navigationController?.navigationBar.topItem?.title = ""
+        
+        
         gradeLbl.text = grades[grade]
         infoTab.isHidden = true
         infoView.isHidden = true
+        
         surfShopCV.delegate = self
         surfShopCV.dataSource = self
+        
         restaurantCV.delegate = self
         restaurantCV.dataSource = self
+        
         hotelCV.delegate = self
         hotelCV.dataSource = self
         

@@ -13,6 +13,6 @@ protocol APIService {
 
 extension APIService {
     static func url(_ path: String) -> String {
-        return "http://13.124.195.255:3003" + path
+        return "http://advisorsurf.ml" + path
     }
 }

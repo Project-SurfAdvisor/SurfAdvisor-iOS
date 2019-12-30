@@ -28,10 +28,18 @@ class MainVC: UIViewController {
             self.locationTxf.text = location
         }
     }
-    
+    private func setupNavi() {
+        let imv: UIImageView = UIImageView(image: #imageLiteral(resourceName: "surfAdvisorCopy"))
+        navigationItem.titleView = imv
+    self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPickerView()
+        setupNavi()
         setupDate()
         setupView()
         let center = NotificationCenter.default
