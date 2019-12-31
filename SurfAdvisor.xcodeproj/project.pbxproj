@@ -12,6 +12,8 @@
 		CB2D3A9F2199251200BC71C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A9E2199251200BC71C2 /* Assets.xcassets */; };
 		CB2D3AA22199251200BC71C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3AA02199251200BC71C2 /* LaunchScreen.storyboard */; };
 		CB2F0D2621A310F700D36E38 /* UIViewController+extesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F0D2521A310F700D36E38 /* UIViewController+extesion.swift */; };
+		CB6005DC23BA22BE00D59FE6 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6005DB23BA22BE00D59FE6 /* UITableViewCell+Extension.swift */; };
+		CB6005DE23BA22F100D59FE6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6005DD23BA22F100D59FE6 /* Location.swift */; };
 		CB774FB02199262400EC1357 /* InfoDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAA2199262400EC1357 /* InfoDetailVC.swift */; };
 		CB774FB12199262400EC1357 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAB2199262400EC1357 /* DetailVC.swift */; };
 		CB774FB22199262400EC1357 /* SearchResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB774FAC2199262400EC1357 /* SearchResultVC.swift */; };
@@ -54,6 +56,8 @@
 		CB2D3AA12199251200BC71C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB2D3AA32199251200BC71C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB2F0D2521A310F700D36E38 /* UIViewController+extesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+extesion.swift"; sourceTree = "<group>"; };
+		CB6005DB23BA22BE00D59FE6 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		CB6005DD23BA22F100D59FE6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		CB774FAA2199262400EC1357 /* InfoDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoDetailVC.swift; sourceTree = "<group>"; };
 		CB774FAB2199262400EC1357 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		CB774FAC2199262400EC1357 /* SearchResultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultVC.swift; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 				CB2F0D2521A310F700D36E38 /* UIViewController+extesion.swift */,
 				CB774FDB219981E800EC1357 /* UIImageView+imageFromUrl.swift */,
 				CB946ED6219C58F40086D720 /* UIView+Design.swift */,
+				CB6005DB23BA22BE00D59FE6 /* UITableViewCell+Extension.swift */,
+				CB6005DD23BA22F100D59FE6 /* Location.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB774FB32199262400EC1357 /* DateVC.swift in Sources */,
+				CB6005DC23BA22BE00D59FE6 /* UITableViewCell+Extension.swift in Sources */,
 				CB774FCA2199271000EC1357 /* HTTPStatusCode.swift in Sources */,
 				CB774FCC2199271000EC1357 /* RequestService.swift in Sources */,
 				CB774FB42199262400EC1357 /* LocationVC.swift in Sources */,
@@ -386,6 +393,7 @@
 				CB946ED7219C58F40086D720 /* UIView+Design.swift in Sources */,
 				CB774FE02199C1CB00EC1357 /* HotelCell.swift in Sources */,
 				CB774FBA2199270700EC1357 /* CityListData.swift in Sources */,
+				CB6005DE23BA22F100D59FE6 /* Location.swift in Sources */,
 				CB2F0D2621A310F700D36E38 /* UIViewController+extesion.swift in Sources */,
 				CB774FD82199272500EC1357 /* SurfShopCell.swift in Sources */,
 			);
@@ -533,7 +541,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pkse1213.SurfAdvisor;
+				PRODUCT_BUNDLE_IDENTIFIER = SurfAdvisor;
 				PRODUCT_NAME = "서핑 어드바이저";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = pkse1213.SurfAdvisor;
+				PRODUCT_BUNDLE_IDENTIFIER = SurfAdvisor;
 				PRODUCT_NAME = "서핑 어드바이저";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

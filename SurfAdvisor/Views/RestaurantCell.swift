@@ -17,7 +17,7 @@ class RestaurantCell: UITableViewCell {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var squareView: UIView!
     @IBOutlet weak var callBtn: UIButton!
-    
+    var restaurantLoc: Location!
     var phoneNum: String = ""
     
     override func awakeFromNib() {
@@ -29,7 +29,10 @@ class RestaurantCell: UITableViewCell {
         squareView.applyRadius(radius: 7)
         infoImageView.applyRadius(radius: 7)
     }
-
+    @IBAction func mapAction(_ sender: Any) {
+        goToKaKaoMapApp(loc: restaurantLoc)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

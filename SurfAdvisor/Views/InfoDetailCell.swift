@@ -21,6 +21,8 @@ class SurfShopInfoCell: UITableViewCell {
     
     var phoneNum: String = ""
 
+    var shopLoc: Location!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         if phoneNum == "-" {
@@ -31,14 +33,8 @@ class SurfShopInfoCell: UITableViewCell {
         infoImageView.applyBorder(width: 1.0, color: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0))
     }
     
-
-//    @IBAction func callAction(_ sender: UIButton) {
-//        guard let url = URL(string: "telprompt://\(phoneNum)") else {
-//            return
-//        }
-//        print("Dfd")
-//        self.inputViewController?.simpleAlertWithCompletion(title: phoneNum, message: "", okCompletion: { (UIAlertAction) in
-//            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-//        }, cancelCompletion: nil)
-//    }
+    @IBAction func mapAction(_ sender: Any) {
+        goToKaKaoMapApp(loc: shopLoc)
+    }
+    
 }

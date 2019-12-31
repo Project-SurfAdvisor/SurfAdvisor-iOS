@@ -19,7 +19,7 @@
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainVC" customModule="SurfAdvisor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="BYZ-38-t0r" customClass="MainVC" customModule="서핑_어드바이저" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,19 +28,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="an5-AT-i0o">
-                                <rect key="frame" x="41.5" y="308" width="37.5" height="19"/>
+                                <rect key="frame" x="41.5" y="306" width="36" height="20"/>
                                 <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meW-iv-yhg">
-                                <rect key="frame" x="41.5" y="402.5" width="67" height="19"/>
+                                <rect key="frame" x="41.5" y="401.5" width="66" height="20"/>
                                 <fontDescription key="fontDescription" name="NanumGothicOTF" family="NanumGothicOTF" pointSize="17"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMT-p0-Lmf">
-                                <rect key="frame" x="41.5" y="334" width="331" height="38.5"/>
+                                <rect key="frame" x="41.5" y="333" width="331" height="38.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2018.10.15" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wcw-60-jrD">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="38.5"/>
@@ -48,7 +48,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="fMw-w3-POa">
-                                        <rect key="frame" x="304" y="10" width="17" height="18.500000000000014"/>
+                                        <rect key="frame" x="304" y="10" width="17" height="18.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fMw-w3-POa" secondAttribute="height" multiplier="13:14" id="v4N-Kv-dvD"/>
                                         </constraints>
@@ -74,7 +74,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="Pfj-dp-ZtU">
-                                        <rect key="frame" x="304" y="10" width="17" height="19.000000000000014"/>
+                                        <rect key="frame" x="304" y="10" width="17" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Pfj-dp-ZtU" secondAttribute="height" multiplier="13:14" id="XvG-co-bZP"/>
                                         </constraints>
@@ -155,7 +155,7 @@
         <!--DetailVC-->
         <scene sceneID="mkh-Q3-1rD">
             <objects>
-                <viewController storyboardIdentifier="DetailVC" id="rE8-eU-ugG" customClass="DetailVC" customModule="SurfAdvisor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVC" id="rE8-eU-ugG" customClass="DetailVC" customModule="서핑_어드바이저" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zez-Y3-jLm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +215,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SurfShopCell" id="tdG-ED-bSw" customClass="SurfShopCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SurfShopCell" id="tdG-ED-bSw" customClass="SurfShopCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="12" width="110" height="76"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -291,7 +291,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestaurantCell" id="m3h-lx-fGy" customClass="SurfShopCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestaurantCell" id="m3h-lx-fGy" customClass="SurfShopCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="12" width="110" height="76"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -367,7 +367,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelCell" id="6nf-A8-daX" customClass="SurfShopCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelCell" id="6nf-A8-daX" customClass="SurfShopCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="12" width="110" height="76"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -719,7 +719,7 @@
                                             </constraints>
                                         </view>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForcastCell" id="2Ay-G0-SBq" customClass="ForcastCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForcastCell" id="2Ay-G0-SBq" customClass="ForcastCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="66" width="414" height="43.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Ay-G0-SBq" id="Jj5-dg-DVA">
@@ -916,8 +916,7 @@
         <!--LocationVC-->
         <scene sceneID="l8z-93-Jby">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-Dz-wFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="LocationVC" id="E2Q-PJ-2jA" customClass="LocationVC" customModule="SurfAdvisor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationVC" id="E2Q-PJ-2jA" customClass="LocationVC" customModule="서핑_어드바이저" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="57I-DE-2mm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -934,7 +933,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CityListCell" id="Ghx-MM-aL1" customClass="CityListCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CityListCell" id="Ghx-MM-aL1" customClass="CityListCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="84" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ghx-MM-aL1" id="BnA-2p-bMP">
@@ -982,13 +981,14 @@
                         <outlet property="searchBar" destination="qms-Y4-G7h" id="E5P-kg-GZd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PP5-Dz-wFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3224.6376811594205" y="-664.95535714285711"/>
         </scene>
         <!--Info DetailVC-->
         <scene sceneID="gwE-op-HuZ">
             <objects>
-                <viewController storyboardIdentifier="InfoDetailVC" id="Drt-UX-Ax6" customClass="InfoDetailVC" customModule="SurfAdvisor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoDetailVC" id="Drt-UX-Ax6" customClass="InfoDetailVC" customModule="서핑_어드바이저" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kfY-kY-aRv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1015,7 +1015,7 @@
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SurfShopInfoCell" rowHeight="400" id="zL1-cH-0Uf" customClass="SurfShopInfoCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SurfShopInfoCell" rowHeight="400" id="zL1-cH-0Uf" customClass="SurfShopInfoCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zL1-cH-0Uf" id="fsv-K6-LlA">
@@ -1087,6 +1087,9 @@
                                                             <state key="normal" backgroundImage="mapIcon">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="mapAction:" destination="zL1-cH-0Uf" eventType="touchUpInside" id="pNZ-dg-EbM"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9o-0R-k44">
                                                             <rect key="frame" x="316.5" y="321.5" width="45.5" height="44.5"/>
@@ -1145,7 +1148,7 @@
                                             <outlet property="timeLabel" destination="Bm9-LI-aeN" id="QV6-Gs-8qF"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestaurantInfoCell" rowHeight="389" id="Jfk-os-iIP" customClass="RestaurantCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestaurantInfoCell" rowHeight="389" id="Jfk-os-iIP" customClass="RestaurantCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="428" width="414" height="389"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jfk-os-iIP" id="W41-5b-DRh">
@@ -1218,6 +1221,9 @@
                                                             <state key="normal" backgroundImage="mapIcon">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="mapAction:" destination="Jfk-os-iIP" eventType="touchUpInside" id="LMB-he-iaz"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="0.25" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1266,7 +1272,7 @@
                                             <outlet property="timeLabel" destination="YcA-Tp-fu3" id="KIr-Qe-r82"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HotelInfoCell" rowHeight="351" id="RPZ-0r-4y2" userLabel="HotelInfoCell" customClass="HotelCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="HotelInfoCell" rowHeight="351" id="RPZ-0r-4y2" userLabel="HotelInfoCell" customClass="HotelCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="817" width="414" height="351"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RPZ-0r-4y2" id="GmA-Hl-MMg">
@@ -1302,6 +1308,9 @@
                                                             <state key="normal" backgroundImage="mapIcon">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="mapAction:" destination="RPZ-0r-4y2" eventType="touchUpInside" id="zGE-jt-jQt"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBu-Du-Qwr">
                                                             <rect key="frame" x="316.5" y="272.5" width="45.5" height="44.5"/>
@@ -1377,12 +1386,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Oo-Hx-sF0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3224.6376811594205" y="18.75"/>
+            <point key="canvasLocation" x="3467" y="20"/>
         </scene>
         <!--Search ResultVC-->
         <scene sceneID="fde-Pn-Oz0">
             <objects>
-                <viewController storyboardIdentifier="SearchResultVC" id="rO0-x7-mm8" customClass="SearchResultVC" customModule="SurfAdvisor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchResultVC" id="rO0-x7-mm8" customClass="SearchResultVC" customModule="서핑_어드바이저" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7hk-Ez-nRd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1394,7 +1403,7 @@
                                 <rect key="frame" x="0.0" y="99" width="414" height="797"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SearchResultCell" id="axc-gV-C2w" customClass="SearchResultCell" customModule="SurfAdvisor" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SearchResultCell" id="axc-gV-C2w" customClass="SearchResultCell" customModule="서핑_어드바이저" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="axc-gV-C2w" id="P2s-oe-jdN">

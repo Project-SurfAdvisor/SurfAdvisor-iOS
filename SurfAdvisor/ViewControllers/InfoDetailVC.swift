@@ -84,6 +84,8 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.introductionLabel.text = surfShop.ssIntroduction
             cell.timeLabel.text = surfShop.ssTime
             cell.infoImageView.imageFromUrl(surfShop.ssPhoto, defaultImgPath: "noImage")
+            cell.shopLoc = Location(longitute: surfShop.ssLongitude, latitude: surfShop.ssLatitude)
+
             if surfShop.ssPhoneNumber == "-" {
                 cell.callBtn.isHidden = true
             } else {
@@ -100,6 +102,7 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.introductionLabel.text = restaurant.rExplain1 + restaurant.rExplain2
             cell.timeLabel.text = restaurant.rTime
             cell.infoImageView.imageFromUrl(restaurant.rPhoto, defaultImgPath: "noImage")
+            cell.restaurantLoc = Location(longitute: restaurant.rLongitude, latitude: restaurant.rLatitude)
             if restaurant.rPhoneNumber == "-" {
                 cell.callBtn.isHidden = true
             } else {
@@ -113,6 +116,7 @@ extension InfoDetailVC: UITableViewDelegate, UITableViewDataSource {
             cell.nameLabel.text = hotel.hName
             cell.addressLabel.text = hotel.hAddress
             cell.infoImageView.imageFromUrl(hotel.hPhoto, defaultImgPath: "noImage")
+            cell.hotelLoc = Location(longitute: hotel.hLongitude, latitude: hotel.hLatitude)
             if hotel.hPhoneNumber == "-" {
                 cell.callBtn.isHidden = true
             } else {

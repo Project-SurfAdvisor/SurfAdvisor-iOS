@@ -221,7 +221,6 @@ extension DetailVC: UICollectionViewDelegate, UICollectionViewDataSource {
         } else if collectionView == hotelCV {
              vc.category = 3
         }
-        
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
