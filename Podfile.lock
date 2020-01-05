@@ -1,8 +1,8 @@
 PODS:
-  - Alamofire (4.7.3)
-  - Kingfisher (4.10.1)
-  - SwiftGifOrigin (1.6.1)
-  - SwiftyJSON (4.2.0)
+  - Alamofire (4.8.2)
+  - Kingfisher (5.6.0)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -18,10 +18,10 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Kingfisher: 1a50df6880a60bae26f3e21a0df3d17b892f5e0b
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
 PODFILE CHECKSUM: bf48d079d35b066180106aadca9a18e49f37b473
 
